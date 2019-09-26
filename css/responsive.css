@@ -2,6 +2,10 @@
 	.container {
 		max-width: 1090px;
 	}
+	/* Sản phẩm khuyến mãi/Ảnh trang trí */
+	.section-5__right img {
+		height: 625px;
+	}
 }
 
 @media (min-width: 1025px) and (max-width: 1199px) {
