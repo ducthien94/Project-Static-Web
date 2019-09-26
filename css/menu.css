@@ -1,0 +1,85 @@
+.menu {
+	background-color: #00ab39;
+}
+
+.navbar {
+	/*padding-left: 0;
+	padding-right: 0;*/
+	background-color: #00ab39;
+	height: 65px;
+}
+
+.navbar-light .navbar-brand {
+	color: #fff;
+	font-family: 'Dancing Script';
+	font-size: 36px;
+	line-height: 40px;
+}
+
+.navbar-collapse {
+	z-index: 1;
+	background-color: #00ab39;
+	transform: translateY(6px);
+}
+
+.navbar-light .navbar-brand:hover {
+	color: #fff;
+	cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-item {
+	padding: 0 10px;
+	cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    padding-bottom: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	color: #fff;
+	cursor: pointer;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link::after {
+	content: '';
+	display: block;
+	width: 0;
+	height: 3px;
+	background-color: #fff;
+	transition: width 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover::after {
+	width: 100%;
+	transition: width 0.5s;
+}
+
+.dropdown-toggle::after {
+	border: none;
+}
+
+.navbar-light .navbar-nav .show >.nav-link {
+    color: #fff;
+}
+
+.navbar-nav .dropdown-menu {
+	background-color: #009D3C;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.dropdown-menu .dropdown-item {
+	color: #fff;
+	border-bottom: 1px solid #fff;
+	padding:10px 15px;
+}
+
+.dropdown-item:hover {
+	background-color: #00809E;
+}

@@ -1,0 +1,8 @@
+[
+	{"name": "Hũ xoắn ong", "oldPrice": "15.000", "newPrice": "10.000", "img": "hu-xoan-ong.png", "link": "hu-xoan-ong.html"},
+	{"name": "Chai ngấn", "oldPrice": "25.000", "newPrice": "18.000", "img": "chai-ngan.jpg", "link": "chai-ngan.html"},
+	{"name": "Ly loe", "oldPrice": "21.000", "newPrice": "15.000", "img": "ly-loe.png", "link": "ly-loe.html"},
+	{"name": "Chai bóng đèn", "oldPrice": "31.000", "newPrice": "25.000", "img": "chai-bong-den.png", "link": "chai-bong-den.html"},
+	{"name": "Hũ nắp gỗ", "oldPrice": "40.000", "newPrice": "32.000", "img": "hu-nap-go.png", "link": "hu-nap-go.html"},
+	{"name": "Bình lọc trà", "oldPrice": "35.000", "newPrice": "28.000", "img": "binh-loc-tra.png", "link": "binh-loc-tra.html"}
+]

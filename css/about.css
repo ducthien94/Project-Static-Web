@@ -1,0 +1,41 @@
+/*.breadcrumb {
+	background-color: #fff;
+}*/
+
+/*.about-heading {
+	font-family: 'Dancing Script', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 48px;
+	line-height: 58px;
+	color: #000000;
+	margin-bottom: 100px;
+}*/
+
+.about-section-1 {
+	margin-bottom: 80px;
+}
+
+.title {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 28px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.text {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 23px;
+	color: #000000;
+	text-align: left;
+}
+
+.img {
+	width: 100%;
+}

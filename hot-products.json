@@ -1,0 +1,9 @@
+[
+	{"name": "Lọ đựng tinh dầu", "price": "8.000", "img": "lo-dung-tinh-dau.png", "link": "lo-dung-tinh-dau.html"},
+	{"name": "Chai sữa nắp thiếc", "price": "12.000", "img": "chai-sua-nap-thiec.png", "link": "chai-sua-nap-thiec.html"},
+	{"name": "Hũ trứng", "price": "27.000", "img": "hu-trung.png", "link": "hu-trung.html"},
+	{"name": "Hũ đựng sữa chua", "price": "7.000", "img": "hu-dung-sua-chua.png", "link": "hu-dung-sua-chua.html"},
+	{"name": "Chai dây xách", "price": "18.000", "img": "chai-day-xach.png", "link": "chai-day-xach.html"},
+	{"name": "Chai My Bottle", "price": "30.000", "img": "chai-my-bottle.png", "link": "chai-my-bottle.html"}
+]
+

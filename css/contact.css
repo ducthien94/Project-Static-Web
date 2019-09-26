@@ -1,0 +1,27 @@
+#form-name, #form-email, #form-text, h4 {
+	margin-bottom: 20px;
+	padding: 15px 15px 15px 10px;
+}
+
+#form-name, #form-email {
+	height: 45px;
+}
+
+#form-submit {
+	width: 80px;
+	height: 35px;
+	background-color: #00ab39;
+	color: #fff;
+}
+
+.icon-fa {
+	color: #00ab39;
+	margin-bottom: 10px;
+}
+
+.gg-map {
+	margin-bottom: 0;
+}
+
+
+

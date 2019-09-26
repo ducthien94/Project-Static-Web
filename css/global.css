@@ -1,0 +1,403 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto';
+}
+
+.carousel {
+	position: sticky;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+	background-color: #fff;
+	padding-left: 0;
+}
+
+/* Heading */
+.heading, .page-heading {
+	font-family: 'Dancing Script', cursive;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+
+/* Page Heading */
+.page-heading {
+	color: #000000;
+	margin-bottom: 100px;
+}
+
+/* Dịch vụ */
+.section-1 {
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+
+.service {
+	border: 2px solid #f2f2f2;
+}
+
+.service-2 {
+	border-right: none;
+	border-left: none;
+}
+
+.service-icon {
+	color: #00ab39;
+	padding-top: 15px;
+}
+
+/* Về chúng tôi */
+.about {
+	max-width: 920px;
+}
+
+.about__desc {
+	font-size: 16px;
+	text-align: center;
+	padding: 20px 40px;
+}
+
+.about__btn {
+	width: 175px;
+	height: 50px;
+	background-color: #fff;
+	color: #00ab39;
+	border: 2px solid #00ab39;
+	border-radius: 10px;
+	text-align: center;
+	line-height: 50px;
+	cursor: pointer;
+}
+
+.about__btn a {
+	color: #00ab39;
+}
+
+.about__btn:hover {
+	background-color: #00ab39;
+	color: #fff;
+}
+
+.about__btn:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+
+
+/* Sản phẩm nổi bật */
+.hot-products {
+	background-color: #f2f2f2;
+	margin-top: 100px;
+	padding-bottom: 60px;
+}
+
+.hot-products__heading {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.hot-products__content .card {
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+	margin-bottom: 40px;
+	padding: 0 15px;
+	background-color: #f2f2f2;
+}
+
+.hot-products__content .card:hover img {
+	opacity: 0.6;
+}
+
+.hot-products__img {
+	overflow: hidden;
+}
+
+.hot-products__img img {
+	transition: all 0.6s linear;
+}
+
+.hot-products__content .card-body {
+	background-color: #fff;
+}
+
+.fa-star {
+	color: #ffff00;
+}
+
+.hot-products__title {
+	font-weight: 500;
+	margin-top: 10px;
+}
+
+.hot-products hr {
+	margin-bottom: 1.5em;
+}
+
+.hot-products__price {
+	font-size: 20px;
+	font-weight: 500;
+	float: left;
+}
+
+.hot-products__btn {
+	float: right;
+}
+
+.btn__buy-now {
+	padding: 8px 15px;
+	background-color: #00ab39;
+	border-radius: 10px;
+	color: #fff;
+	margin-right: 15px;
+}
+
+.btn__buy-now:hover {
+	text-decoration: none;
+	color: #fff;
+}
+
+.fa-cart-plus {
+	color: #0099FF;
+	padding-top: 5px;
+}
+
+.btn__all-products {
+	width: 175px;
+	height: 50px;
+	line-height: 50px;
+	border: 2px solid #00ab39;
+	color: #00ab39;
+	border-radius: 10px;
+}
+
+.btn__all-products a {
+	color: #00ab39;
+}
+
+.btn__all-products:hover {
+	background-color: #00ab39;
+	color: #fff;
+	cursor: pointer;
+}
+
+.btn__all-products:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* Ảnh trang trí (Section 4) */
+.section-4 {
+	margin-top: 80px;
+}
+
+.section-4 .images {
+	overflow: hidden;
+	border-radius: 15px; 
+}
+
+.section-4 img {
+	max-width: 100%;
+	transition: all 0.5s linear;
+}
+
+.section-4 img:hover {
+	transform: scale(1.1);
+	opacity: 0.7;
+}
+
+/* Sản phẩm khuyễn mãi */
+.section-5 {
+	margin-top: 100px;
+}
+
+.section-5__left {
+	padding-right: 0;
+}
+
+.promotional-products__heading {
+	margin-bottom: 50px;
+}
+
+.promotional-products__img .card-img {
+	border-top-right-radius: 0;
+	border-bottom-right-radius: 0;
+}
+
+.promotional-products__content .card:hover img {
+	opacity: 0.7;
+}
+
+.promotional-products__img img {
+	transition: all 0.6s linear;
+}
+
+.promotional-products__content .card-0,
+.promotional-products__content .card-2,
+.promotional-products__content .card-4 {
+	float: left;
+	padding: 10px 10px 0 10px;
+	border-radius: 0;
+	border: none;
+}
+
+.promotional-products__content .card-1,
+.promotional-products__content .card-3,
+.promotional-products__content .card-5 {
+	float: right;
+	padding: 10px 10px 0 10px;
+	border-radius: 0;
+	border: none;
+}
+
+.promotional-products__content .card-body {
+	padding: 5px 0 6px 10px;
+	border: 1px solid #c4c4c4;
+	border-top-right-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+.promotional-products__btn {
+	padding-bottom: 15px;
+	padding-top: 5px;
+}
+
+.promotional-products__btn .btn__buy-now {
+	margin-right: 10px;
+}
+
+.promotional-products__new-price {
+	font-style: normal;
+	font-weight: bold;
+	font-size: 20px;
+	line-height: 23px;
+	color: #00AB39;
+}
+
+.promotional-products__old-price {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 19px;
+	text-decoration-line: line-through;
+	color: #929191;
+}
+
+/* Tin tức */
+.news {
+	background-color: #f2f2f2;
+	margin-top: 100px;
+	padding-bottom: 30px;
+}
+
+.news__items {
+	padding-left: 15px;
+}
+
+.news__heading {
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.news__items .card {
+	background-color: #f2f2f2;
+	border: none;
+	padding-left: 0;
+	padding-right: 0;
+	margin-right: 15px;
+}
+
+.news__items .card-body {
+	background-color: #fff;
+	padding: 15px;
+}
+
+.news__items .card-body a:hover,
+.news__items .title-link:hover h6 {
+	text-decoration: none;
+	color: orange;
+}
+
+.news__items .card-text {
+	font-size: 14px;
+}
+
+.slick-dots {
+	padding-right: 20px;
+}
+
+.slick-dots li button {
+	width: 10px;
+	height: 10px;
+	background-color: #c4c4c4;
+	border-radius: 50%;
+}
+
+.slick-dots li button:hover {
+	background-color: #737373;
+}
+
+.slick-dots li.slick-active button
+{
+    opacity: 1;
+    background-color: green;
+}
+
+.slick-dots li button:before {
+	content: '';
+}
+
+.news__btn {
+	width: 175px;
+	height: 50px;
+	line-height: 50px;
+	border: 2px solid #00ab39;
+	border-radius: 10px;
+	margin-top: 85px;
+	margin-bottom: 50px;
+}
+
+.news__btn a {
+	color: #00ab39;
+}
+
+.news__btn:hover {
+	background-color: #00ab39;
+	color: #fff;
+	cursor: pointer;
+}
+
+.news__btn:hover a {
+	text-decoration: none;
+	color: #fff;
+}
+
+/* News items 2 */
+.news__items-2, .news__btn-1 {
+	display: none;
+}
+.news__items-2 .card {
+	background-color: #f2f2f2;
+}
+
+.news__items-2 .card-body {
+	background-color: #fff;
+}
+
+.news__items-2 .card-text {
+	font-size: 14px;
+}
+
+/* Back to top */
+.back-to-top {
+	color: #00ab39;
+}
+
