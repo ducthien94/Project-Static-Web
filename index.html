@@ -63,7 +63,7 @@
           <p class="heading about__heading">Về chúng tôi</p>
           <p class="about__desc">Từ một cửa hàng nhỏ chủ yếu là bán hàng online giờ đây chúng tôi đã phát triển thành chuỗi các cửa hàng
             chuyên phân phối các sản phẩm chai lọ thủy tinh nhằm đáp ứng nhu cầu sử dụng của người tiêu dùng. Trải qua một 
-            chặng đường dài, chúng tôi đã không ngừng mang đếnnhững sản phẩm có mẫu mã đa dạng, chất lượng tốt nhất,
+            chặng đường dài, chúng tôi đã không ngừng mang đến những sản phẩm có mẫu mã đa dạng, chất lượng tốt nhất,
           với giá cả hợp lí nhất tới tay người tiêu dùng.</p>
           <div class="about__btn mx-auto"><a href="about.html">Tìm hiểu thêm</a></div>
         </section> 
@@ -98,7 +98,7 @@
           <div class="row">
             <div class="col-md-8 col-12 section-5__left px-3">
               <p class="heading promotional-products__heading">Sản phẩm khuyến mãi</p>
-              <div id="promotional-products" class="promotional-products__content"></div>
+              <div class="promotional-products__content"></div>
             </div>
             <div class="col-md-4 col-12 section-5__right pl-0">
               <img class="w-100" src="images/anh-trang-tri/img6.png" alt="Ảnh trang trí" title="Ảnh trang trí">
@@ -178,7 +178,7 @@
               <div class="card-body">
                 <a href="" class="text-dark title-link"><h6 class="card-title">Bao bì thủy tinh - Xu hướng tiêu dùng hiện nay</h6></a>
                 <hr>
-                <p class="card-text">Thủy tinh là chất liệu cao cấp hoàn toàn thân thiện với môi trường. Khác với nhựa, thủy tinh có khả năng chịu nhiệt tốt, không gây phản ứng hóa học.</p>
+                <p class="card-text">Thủy tinh là chất liệu cao cấp hoàn toàn thân thiện với môi trường. Khác với nhựa, thủy tinh khá cứng, có khả năng chịu nhiệt tốt, độ bền cao.</p>
                 <a href="https://facebook.com" class="activator waves-effect waves-light" title="Chia sẻ"><i class="fas fa-share-alt"></i></a>
                 <a href="#!" class="black-text float-right justify-content-end"><h6>Đọc tiếp <i class="fas fa-angle-double-right"></i></h6></a>
               </div>
@@ -206,7 +206,7 @@
           </div>
           <div class="dot mx-auto"></div>
         </div>
-        <div class="news__btn news__btn-1 text-center mx-auto"><a href="#">Xem thêm tin tức</a></div>
+        <div class="news__btn news__btn-1 text-center mx-auto"><a href="news.html">Xem thêm tin tức</a></div>
 
         <!-- News items 2 -->
         <div class=" news__items-2 row mx-auto">
@@ -263,7 +263,7 @@
           </div>
         </div>
         <!-- Card 3 -->
-         <div class="news__btn news__btn-2 text-center mx-auto"><a href="#">Xem thêm tin tức</a></div>
+        <div class="news__btn news__btn-2 text-center mx-auto"><a href="news.html">Xem thêm tin tức</a></div>
       </div>
       <!-- News items 2 -->
     </section>
@@ -276,12 +276,37 @@
 
 
   <!-- Back to top -->
-  <a class="back-to-top" href="#" title="Quay lại đầu trang">
+  <div class="back-to-top" href="#" title="Quay lại đầu trang">
     <i class="fas fa-chevron-circle-up fa-2x"></i>
-  </a>
+  </div>
   <!-- Footer -->
   <div id="footer"></div>
 
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>
+    window.fbAsyncInit = function() {
+      FB.init({
+        xfbml            : true,
+        version          : 'v4.0'
+      });
+    };
+    (function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+    <!-- Your customer chat code -->
+    <div class="fb-customerchat"
+    attribution=setup_tool
+    page_id="2071419156449295"
+    logged_in_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi."
+    logged_out_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi.">
+  </div>
 
 
   <!-- jQuery -->
@@ -294,7 +319,6 @@
   <script type="text/javascript" src="js/slick.min.js"></script>
   <!-- JS -->
   <script src="js/script.js"></script>
-
 
 </body>
 </html>

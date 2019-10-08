@@ -1,47 +1,40 @@
-<div class="container-fluid menu">
-  <nav class="navbar navbar-expand-lg navbar-light container">
-    <a class="navbar-brand" href="index.html">Bottles & jars</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html">Trang chủ</a>
+
+  <!-- Menu -->
+  <div class="container-fluid menu-wrap">
+    <div class="container mx-auto menu">
+      <div class="logo"> <a href="index.html"><img src="images/logo1.svg" alt="logo" title="Logo"></a></div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="about.html">Về chúng tôi</a></li>
+          <li><a href="product.html">Sản phẩm <!-- <i class="fa fa-caret-down"></i> --></a>
+           <!-- <ul class="sub-menu">
+            <li><a href="">Chai thủy tinh</a></li>
+            <li><a href="">Hũ thủy tinh</a></li>
+            <li><a href="">Cốc thủy tinh</a></li>
+            <li><a href="">Lọ đựng tinh dầu, mỹ phẩm</a></li>
+          </ul> -->
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">Về chúng tôi</a>
+        <li><a href="news.html">Tin tức</a></li>
+        <li><a href="contact.html">Liên hệ</a></li>
+        <li id="icon-search"><a href="#" title="Tìm kiếm"><i class="fas fa-search"></i></a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Sản phẩm <i class="fas fa-caret-down text-white"></i>
-          </a>
-          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <a class="dropdown-item" href="#">Chai thủy tinh</a>
-            <a class="dropdown-item" href="#">Hũ thủy tinh</a>
-            <a class="dropdown-item" href="#">Lọ đựng tinh dầu, mỹ phẩm</a>
-            <a class="dropdown-item border-bottom-0" href="#">Ly, cốc thủy tinh</a>
-          </div>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="news.html">Tin tức</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="contact.html">Liên hệ</a>
-        </li>
+        <li><a href="#" title="Giỏ hàng"><i class="fas fa-shopping-cart"></i></a></li>
       </ul>
-      <ul class="navbar-nav ml-auto nav-flex-icons">
-        <li class="nav-item">
-          <a class="waves-effect waves-light">
-            <i class="fas fa-search text-white" title="Tìm kiếm"></i>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="waves-effect waves-light">
-            <i class="fas fa-shopping-cart text-white" title="Giỏ hàng"></i>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+    </nav>
+    <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+  </div>
 </div>
+<!-- Menu -->
+
+<div class=" search-box">
+  <span class="close-search-box"><i class="far fa-window-close fa-2x"></i></span>
+  <form class="container" role="form">
+        <div class="form-group">
+          <input type="input" class="form-control input-lg" id="search" placeholder="Tìm kiến sản phẩm">
+        </div>
+  </form>
+  <div id="results"></div>
+
+
+<script src="js/header.js"></script>

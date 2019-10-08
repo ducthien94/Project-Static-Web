@@ -18,6 +18,15 @@ body {
 	padding-left: 0;
 }
 
+.breadcrumb-item a {
+	color: #6c757d;
+}
+
+.breadcrumb a:hover {
+	text-decoration: none;
+	color: blue;
+}
+
 /* Heading */
 .heading, .page-heading {
 	font-family: 'Dancing Script', cursive;
@@ -32,6 +41,27 @@ body {
 .page-heading {
 	color: #000000;
 	margin-bottom: 100px;
+}
+
+/* Nút Mua ngay + Thêm vào giỏ hàng */
+.btn__buy-now {
+	padding: 8px 15px;
+	background-color: #00ab39;
+	border-radius: 10px;
+	color: #fff;
+	margin-right: 15px;
+	border: 1px solid #00ab39;
+}
+
+.btn__buy-now:hover {
+	text-decoration: none;
+	color: #00ab39;
+	background-color: #fff;
+}
+
+.fa-cart-plus {
+	color: #0099FF;
+	padding-top: 5px;
 }
 
 /* Dịch vụ */
@@ -111,10 +141,15 @@ body {
 	margin-bottom: 40px;
 	padding: 0 15px;
 	background-color: #f2f2f2;
+	transition: all 0.4s;
 }
 
 .hot-products__content .card:hover img {
-	opacity: 0.6;
+	opacity: 0.8;
+}
+
+.hot-products__content .card:hover {
+	transform: translateY(-10px);
 }
 
 .hot-products__img {
@@ -150,24 +185,6 @@ body {
 
 .hot-products__btn {
 	float: right;
-}
-
-.btn__buy-now {
-	padding: 8px 15px;
-	background-color: #00ab39;
-	border-radius: 10px;
-	color: #fff;
-	margin-right: 15px;
-}
-
-.btn__buy-now:hover {
-	text-decoration: none;
-	color: #fff;
-}
-
-.fa-cart-plus {
-	color: #0099FF;
-	padding-top: 5px;
 }
 
 .btn__all-products {
@@ -235,6 +252,7 @@ body {
 .promotional-products__content .card:hover img {
 	opacity: 0.7;
 }
+
 
 .promotional-products__img img {
 	transition: all 0.6s linear;
@@ -348,7 +366,7 @@ body {
 .slick-dots li.slick-active button
 {
     opacity: 1;
-    background-color: green;
+    background-color: orange;
 }
 
 .slick-dots li button:before {
@@ -381,7 +399,7 @@ body {
 }
 
 /* News items 2 */
-.news__items-2, .news__btn-1 {
+.news__items-2 {
 	display: none;
 }
 .news__items-2 .card {
@@ -398,6 +416,11 @@ body {
 
 /* Back to top */
 .back-to-top {
-	color: #00ab39;
+	color: orange;
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	cursor: pointer;
+	display: none;
 }
 

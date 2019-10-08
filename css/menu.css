@@ -1,85 +1,110 @@
+.menu-wrap {
+	background-color: #00ab39;
+}
+
 .menu {
-	background-color: #00ab39;
-}
-
-.navbar {
-	/*padding-left: 0;
-	padding-right: 0;*/
-	background-color: #00ab39;
-	height: 65px;
-}
-
-.navbar-light .navbar-brand {
-	color: #fff;
-	font-family: 'Dancing Script';
-	font-size: 36px;
-	line-height: 40px;
-}
-
-.navbar-collapse {
-	z-index: 1;
-	background-color: #00ab39;
-	transform: translateY(6px);
-}
-
-.navbar-light .navbar-brand:hover {
-	color: #fff;
-	cursor: pointer;
-}
-
-.navbar-light .navbar-nav .nav-item {
-	padding: 0 10px;
-	cursor: pointer;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    color: #fff;
-    padding-bottom: 0;
-}
-
-.navbar-light .navbar-nav .nav-link {
-	color: #fff;
-	cursor: pointer;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-    color: #fff;
-}
-
-.navbar-light .navbar-nav .nav-link::after {
-	content: '';
-	display: block;
-	width: 0;
-	height: 3px;
-	background-color: #fff;
-	transition: width 0.5s;
-}
-
-.navbar-light .navbar-nav .nav-link:hover::after {
+	background: #00ab39;
 	width: 100%;
-	transition: width 0.5s;
+	height: 55px;
 }
 
-.dropdown-toggle::after {
-	border: none;
+.menu .logo {
+	line-height: 55px;
+	float: left;
 }
 
-.navbar-light .navbar-nav .show >.nav-link {
-    color: #fff;
+.menu nav.active {
+	left: 0;
 }
 
-.navbar-nav .dropdown-menu {
-	background-color: #009D3C;
-	padding-top: 0;
-	padding-bottom: 0;
+.menu nav {
+	float: right;
 }
 
-.dropdown-menu .dropdown-item {
-	color: #fff;
+.menu nav ul {
+	display: flex;
+}
+
+.menu nav ul li {
+	list-style: none;
+	position: relative;
+}
+
+/*.menu nav ul li .sub-menu {
+	position: absolute;
+	display: none;
+	width: 240px;
+	background-color: #00802b;
+	z-index: 222;
+}
+
+.menu nav ul li:hover .sub-menu {
+	display: block;
+}
+
+.menu .sub-menu li {
 	border-bottom: 1px solid #fff;
-	padding:10px 15px;
 }
 
-.dropdown-item:hover {
-	background-color: #00809E;
+.menu .sub-menu li:last-child {
+	border-bottom: none;
+}
+
+.menu .sub-menu li:hover a {
+	background-color: #00cc44;
+}*/
+.menu nav ul li a {
+	height: 55px;
+	line-height: 55px;
+	padding: 0 20px;
+	text-decoration: none;
+	color: #fff;
+	display: block;
+}
+
+.menu nav ul li a:hover {
+	background: #00802b;
+}
+
+.menu-toggle {
+	color: #fff;
+	float: right;
+	line-height: 55px;
+	font-size: 24px;
+	cursor: pointer;
+	display: none; 
+}
+
+
+
+.search-box {
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	background-color: #000000e9;
+	padding: 50px 250px;
+}
+
+.close-search-box {
+	color: #fff;
+	font-weight: 24px;
+	float: right;
+	cursor: pointer;
+}
+
+.search-box form {
+	padding: 0 5%;
+}
+
+#results {
+	max-height: 60%;
+	background-color: #fff;
+	overflow: auto;
+	margin: 0 5%;
+}
+
+#results .link, #results .price {
+	color: #000;
+	font-size: 20px;
 }

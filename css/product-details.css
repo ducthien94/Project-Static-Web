@@ -1,0 +1,36 @@
+.product-details__price {
+	font-size: 24px;
+	font-weight: 500;
+	color: #00ab39;
+}
+
+.product-details__amount {
+	width: 60px;
+	padding: 3px;
+	margin-bottom: 16px;
+}
+
+.product-details__submit {
+	margin-bottom: 16px;
+}
+
+.product-details__submit,
+.product-details__addToCart {
+	width: 160px;
+	padding: 5px;
+	border-radius: 10px;
+	color: #fff;
+	background-color: #00ab39;
+	outline: none;
+	border: 1px solid #00ab39;
+}
+
+.product-details__submit:hover,
+.product-details__addToCart:hover {
+	background-color: transparent;
+	color: #00ab39;
+}
+
+.fas {
+	color: #00ab39;
+}

@@ -1,0 +1,361 @@
+[
+	{
+		"hotProducts":[
+			{"id": "28", "name": "Lọ đựng tinh dầu", "price": "8.000", "img": "lo-dung-tinh-dau.png"},
+			{"id": "06", "name": "Chai sữa nắp thiếc", "price": "12.000", "img": "chai-sua-nap-thiec.png"},
+			{"id": "17", "name": "Hũ trứng", "price": "27.000", "img": "hu-trung.png"},
+			{"id": "14", "name": "Hũ đựng sữa chua", "price": "7.000", "img": "hu-dung-sua-chua.png"},
+			{"id": "03", "name": "Chai dây xách", "price": "18.000", "img": "chai-day-xach.png"},
+			{"id": "04", "name": "Chai My Bottle", "price": "30.000", "img": "chai-my-bottle.png"}
+		]
+	},
+	{
+		"promotionalProducts": [	
+			{"id": "13", "name": "Hũ xoắn ong", "oldPrice": "15.000", "newPrice": "10.000", "img": "hu-xoan-ong.png"},
+			{"id": "05", "name": "Chai ngấn", "oldPrice": "25.000", "newPrice": "18.000", "img": "chai-ngan.jpg"},
+			{"id": "25", "name": "Ly loe", "oldPrice": "21.000", "newPrice": "15.000", "img": "ly-loe.png"},
+			{"id": "02", "name": "Chai bóng đèn", "oldPrice": "31.000", "newPrice": "25.000", "img": "chai-bong-den.png"},
+			{"id": "16", "name": "Hũ nắp gỗ", "oldPrice": "40.000", "newPrice": "32.000", "img": "hu-nap-go.png"},
+			{"id": "", "name": "Bình lọc trà", "oldPrice": "35.000", "newPrice": "28.000", "img": "binh-loc-tra.png"}
+		]
+	},
+	{
+		"glassBottles":[
+			{"id": "01", "name": "Chai bầu", "price": "15.000", "img": "chai-bau.png", "star": "3star.png"},
+			{"id": "02", "name": "Chai bóng đèn", "price": "25.000", "img": "chai-bong-den.png", "star": "3,5star.png"},
+			{"id": "03", "name": "Chai dây xách", "price": "18.000", "img": "chai-day-xach.png", "star": "5star.png"},
+			{"id": "04", "name": "Chai My Bottle", "price": "30.000", "img": "chai-my-bottle.png", "star": "4star.png"},
+			{"id": "05", "name": "Chai ngấn", "price": "18.000", "img": "chai-ngan.png", "star": "3,5star.png"},
+			{"id": "06", "name": "Chai sữa", "price": "12.000", "img": "chai-sua.png", "star": "5star.png"},
+			{"id": "07", "name": "Chai eo", "price": "20.000", "img": "chai-eo.png", "star": "3star.png"},
+			{"id": "08", "name": "Chai tam giác", "price": "25.000", "img": "chai-tam-giac.png", "star": "3star.png"},
+			{"id": "09", "name": "Chai vuông", "price": "15.000", "img": "chai-vuong.png", "star": "4star.png"}
+		]
+	},
+	{
+		"glassJars":[
+			{"id": "10", "name": "Hũ lục giác", "price": "10.000", "img": "hu-luc-giac.png", "star": "4star.png"},
+			{"id": "11", "name": "Hũ nắp cài", "price": "60.000", "img": "hu-nap-cai.png", "star": "3star.png"},
+			{"id": "12", "name": "Hũ nghiêng", "price": "9.000", "img": "hu-nghieng.png", "star": "4,5star.png"},
+			{"id": "13", "name": "Hũ ong", "price": "11.000", "img": "hu-ong.png", "star": "4star.png"},
+			{"id": "14", "name": "Hũ sữa chua", "price": "8.000", "img": "hu-sua-chua.png", "star": "5star.png"},
+			{"id": "15", "name": "Hũ tròn nắp thiếc", "price": "8.000", "img": "hu-tron-nap-thiec.png", "star": "4,5star.png"},
+			{"id": "16", "name": "Hũ tròn nắp gỗ", "price": "40.000", "img": "hu-tron-nap-go.png", "star": "3,5star.png"},
+			{"id": "17", "name": "Hũ trứng", "price": "28.000", "img": "hu-trung.png", "star": "5star.png"},
+			{"id": "18", "name": "Hũ vuông", "price": "8.000", "img": "hu-vuong.png", "star": "4star.png"}
+		]
+	},
+	{
+		"glassCups": [
+			{"id": "19", "name": "Cốc quai hình bóng", "price": "25.000", "img": "coc-quai-hinh-bong.png", "star": "4star.png"},
+			{"id": "20", "name": "Cốc quai đầu lâu", "price": "25.000", "img": "coc-quai-dau-lau.png", "star": "3star.png"},
+			{"id": "21", "name": "Cốc quai hình bí", "price": "25.000", "img": "coc-quai-hinh-bi.png", "star": "3,5star.png"},
+			{"id": "22", "name": "Cốc quai hình cú", "price": "25.000", "img": "coc-quai-hinh-cu.png", "star": "3star.png"},
+			{"id": "23", "name": "Cốc quai hình dứa", "price": "25.000", "img": "coc-quai-hinh-dua.png", "star": "4,5star.png"},
+			{"id": "24", "name": "Cốc quai hình vuông", "price": "25.000", "img": "coc-quai-hinh-vuong.png", "star": "5star.png"},
+			{"id": "25", "name": "Ly loe", "price": "25.000", "img": "ly-loe.png", "star": "3star.png"}
+		]
+	},
+	{
+		"cosmeticBottles": [
+			{"id": "26", "name": "Lọ chiết serum", "price": "9.000", "img": "lo-chiet-serum.png", "star": "4,5star.png"},
+			{"id": "27", "name": "Hũ nắp bạc", "price": "17.000", "img": "hu-nap-bac.png", "star": "4star.png"},
+			{"id": "28", "name": "Lọ đựng tinh dầu", "price": "9.000", "img": "lo-dung-tinh-dau.png", "star": "4star.png"},
+			{"id": "29", "name": "Lọ bi lăn", "price": "14.000", "img": "lo-bi-lan.png", "star": "3star.png"},
+			{"id": "30", "name": "Hũ nhôm", "price": "12.000", "img": "hu-nhom.png", "star": "4star.png"},
+			{"id": "31", "name": "Chai xịt phun sương", "price": "18.000", "img": "chai-xit-phun-suong.png", "star": "4star.png"},
+			{"id": "32", "name": "Lọ tinh dầu treo xe", "price": "20.000", "img": "lo-tinhdau-treo-xe.png", "star": "3star.png"}
+		]
+	},
+	{
+		"allProducts": [
+
+			{
+				"id": "01",
+				"name": "Chai bầu",
+				"price": "15.000",
+				"img": "images/chai-thuy-tinh/chai-bau.png",
+				"img2":"images/anh-chi-tiet-sp/chai-bau.png",
+				"material": "Chai thủy tinh - Nút gỗ"
+			},
+
+			{
+				"id": "02",
+				"name": "Chai bóng đèn",
+				"price": "25.000",
+				"img": "images/chai-thuy-tinh/chai-bong-den.png",
+				"img2": "images/anh-chi-tiet-sp/chai-bong-den.png",
+				"material": "Chai thủy tinh - Nắp nhôm"
+			},
+
+			{
+				"id": "03",
+				"name": "Chai dây xách",
+				"price": "18.000",
+				"img": "images/chai-thuy-tinh/chai-day-xach.png",
+				"img2": "images/anh-chi-tiet-sp/chai-day-xach.png",
+				"material": "Chai thủy tinh - Nắp inox, có dây"
+			},
+
+			{
+				"id": "04",
+				"name": "Chai My Bottle",
+				"price": "30.000",
+				"img": "images/chai-thuy-tinh/chai-my-bottle.png",
+				"img2": "images/anh-chi-tiet-sp/chai-my-bottle.png",
+				"material": "Chai thủy tinh - Nắp nhựa"
+			},
+
+			{
+				"id": "05",
+				"name": "Chai ngấn",
+				"price": "18.000",
+				"img": "images/chai-thuy-tinh/chai-ngan.png",
+				"img2": "images/anh-chi-tiet-sp/chai-ngan.png",
+				"material": "Chai thủy tinh - Nắp thiếc vặn"
+			},
+
+			{
+				"id": "06",
+				"name": "Chai sữa nắp thiếc",
+				"price": "12.000",
+				"img": "images/chai-thuy-tinh/chai-sua-nap-thiec.png",
+				"img2": "images/anh-chi-tiet-sp/chai-sua.png",
+				"material": "Chai thủy tinh - Nắp thiếc vặn"
+			},
+
+			{
+				"id": "07",
+				"name": "Chai eo",
+				"price": "20.000",
+				"img": "images/chai-thuy-tinh/chai-eo.png",
+				"img2": "images/anh-chi-tiet-sp/chai-eo.png",
+				"material": "Chai thủy tinh"
+			},
+
+			{
+				"id": "08",
+				"name": "Chai tam giác",
+				"price": "25.000",
+				"img": "images/chai-thuy-tinh/chai-tam-giac.png",
+				"img2": "images/anh-chi-tiet-sp/chai-tam-giac.png",
+				"material": "Chai thủy tinh - Nút gỗ"
+			},
+
+			{
+				"id": "09",
+				"name": "Chai vuông",
+				"price": "15.000",
+				"img": "images/chai-thuy-tinh/chai-vuong.png",
+				"img2": "images/anh-chi-tiet-sp/chai-vuong.png",
+				"material": "Chai thủy tinh - Nút gỗ"
+			},
+
+			{
+				"id": "10",
+				"name": "Hũ lục giác",
+				"price": "10.000",
+				"img": "images/hu-thuy-tinh/hu-luc-giac.png",
+				"img2": "images/anh-chi-tiet-sp/hu-luc-giac.png",
+				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+			},
+
+			{
+				"id": "11",
+				"name": "Hũ nắp cài",
+				"price": "60.000",
+				"img": "images/hu-thuy-tinh/hu-nap-cai.png",
+				"img2": "images/anh-chi-tiet-sp/hu-nap-cai.png",
+				"material": "Hũ thủy tinh - Nắp cài có gioăng kín"
+			},
+
+			{
+				"id": "12",
+				"name": "Hũ nghiêng",
+				"price": "9.000",
+				"img": "images/hu-thuy-tinh/hu-nghieng.png",
+				"img2": "images/anh-chi-tiet-sp/hu-nghieng.png",
+				"material": "Hũ thủy tinh - Nắp nhựa vặn"
+			},
+
+			{
+				"id": "13",
+				"name": "Hũ ong",
+				"price": "11.000",
+				"img": "images/hu-thuy-tinh/hu-ong.png",
+				"img2": "images/anh-chi-tiet-sp/hu-ong.png",
+				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+			},
+
+			{
+				"id": "14",
+				"name": "Hũ sữa chua",
+				"price": "8.000",
+				"img": "images/hu-thuy-tinh/hu-sua-chua.png",
+				"img2": "images/anh-chi-tiet-sp/hu-sua-chua.png",
+				"material": "Hũ thủy tinh - Nắp nhựa chụp"
+			},
+
+			{
+				"id": "15",
+				"name": "Hũ tròn nắp thiếc",
+				"price": "8.000",
+				"img": "images/hu-thuy-tinh/hu-tron-nap-thiec.png",
+				"img2": "images/anh-chi-tiet-sp/hu-tron-nap-thiec.png",
+				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+			},
+
+			{
+				"id": "16",
+				"name": "Hũ tròn nắp gỗ",
+				"price": "40.000",
+				"img": "images/hu-thuy-tinh/hu-tron-nap-go.png",
+				"img2": "images/anh-chi-tiet-sp/hu-tron-nap-go.png",
+				"material": "Hũ thủy tinh - Nắp gỗ"
+			},
+
+			{
+				"id": "17",
+				"name": "Hũ trứng",
+				"price": "28.000",
+				"img": "images/hu-thuy-tinh/hu-trung.png",
+				"img2": "images/anh-chi-tiet-sp/hu-trung.png",
+				"material": "Hũ thủy tinh"
+			},
+
+			{
+				"id": "18",
+				"name": "Hũ vuông",
+				"price": "8.000",
+				"img": "images/hu-thuy-tinh/hu-vuong.png",
+				"img2": "images/anh-chi-tiet-sp/hu-vuong.png",
+				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+			},
+
+			{
+				"id": "19",
+				"name": "Cốc quai hình bóng",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/coc-quai-hinh-bong.png",
+				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-bong.png",
+				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+			},
+
+			{
+				"id": "20",
+				"name": "Cốc quai đầu lâu",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/coc-quai-dau-lau.png",
+				"img2": "images/anh-chi-tiet-sp/coc-quai-dau-lau.png",
+				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+			},
+
+			{
+				"id": "21",
+				"name": "Cốc quai hình bí",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/coc-quai-hinh-bi.png",
+				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-bi.png",
+				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+			},
+
+			{
+				"id": "22",
+				"name": "Cốc quai hình cú",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/coc-quai-hinh-cu.png",
+				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-cu.png",
+				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+			},
+
+			{
+				"id": "23",
+				"name": "Cốc quai hình dứa",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/coc-quai-hinh-dua.png",
+				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-dua.png",
+				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+			},
+
+			{
+				"id": "24",
+				"name": "Cốc quai hình vuông",
+				"price": "25.000", "img": "images/coc-thuy-tinh/coc-quai-hinh-vuong.png",
+				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-vuong.png",
+				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+			},
+
+			{
+				"id": "25",
+				"name": "Ly loe",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/ly-loe.png", "link": "ly-loe.html",
+				"img2": "images/anh-chi-tiet-sp/ly-loe.png",
+				"material": "Ly thủy tinh"
+			},	
+
+			{
+				"id": "26",
+				"name": "Lọ chiết serum",
+				"price": "9.000", "img": "images/lo-tinhdau-mypham/lo-chiet-serum.png",
+				"img2": "images/anh-chi-tiet-sp/lo-chiet-serum.png",
+				"material": "Thủy tinh, khoen nhựa, bóp cao su"
+			},
+
+			{
+				"id": "27",
+				"name": "Hũ nắp bạc",
+				"price": "17.000",
+				"img": "images/lo-tinhdau-mypham/hu-nap-bac.png",
+				"img2": "images/anh-chi-tiet-sp/hu-nap-bac.png",
+				"material": "Hũ thủy tinh - Nắp nhựa vặn"
+			},
+
+			{
+				"id": "28",
+				"name": "Lọ đựng tinh dầu",
+				"price": "9.000", 
+				"img": "images/lo-tinhdau-mypham/lo-dung-tinh-dau.png",
+				"img2": "images/anh-chi-tiet-sp/lo-dung-tinh-dau.png",
+				"material": "Lọ thủy tinh - Nắp nhựa"
+			},
+
+			{
+				"id": "29",
+				"name": "Lọ bi lăn",
+				"price": "14.000",
+				"img": "images/lo-tinhdau-mypham/lo-bi-lan.png",
+				"img2": "images/anh-chi-tiet-sp/lo-bi-lan.png",
+				"material": "Lọ thủy tinh - Nắp nhựa"
+			},
+
+			{
+				"id": "30",
+				"name": "Hũ nhôm",
+				"price": "12.000",
+				"img": "images/lo-tinhdau-mypham/hu-nhom.png",
+				"img2": "images/anh-chi-tiet-sp/hu-nhom.png",
+				"material": "Hũ nhôm"
+			},
+
+			{
+				"id": "31",
+				"name": "Chai xịt phun sương",
+				"price": "18.000",
+				"img": "images/lo-tinhdau-mypham/chai-xit-phun-suong.png",
+				"img2": "images/anh-chi-tiet-sp/chai-xit-phun-suong.png",
+				"materail": "Chai nhựa"
+			},
+
+			{
+				"id": "32",
+				"name": "Lọ tinh dầu treo xe",
+				"price": "20.000",
+				"img": "images/lo-tinhdau-mypham/lo-tinhdau-treo-xe.png", 
+				"img2": "images/anh-chi-tiet-sp/lo-tinh-dau-treo-xe.png",
+				"material": "Lọ thủy tinh - Nắp gỗ"
+			}    
+		]
+}
+]
+
