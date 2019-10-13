@@ -4,6 +4,10 @@
 	color: #00ab39;
 }
 
+.product-details__desc {
+	font-weight: 500;
+}
+
 .product-details__amount {
 	width: 60px;
 	padding: 3px;
@@ -19,18 +23,43 @@
 	width: 160px;
 	padding: 5px;
 	border-radius: 10px;
-	color: #fff;
-	background-color: #00ab39;
 	outline: none;
 	border: 1px solid #00ab39;
 }
 
-.product-details__submit:hover,
-.product-details__addToCart:hover {
-	background-color: transparent;
+.product-details__submit {
+	background-color: #00ab39;
+	color: #fff; 
+}
+
+.product-details__submit:hover {
+	background-color: #f2f2f2;
 	color: #00ab39;
 }
 
-.fas {
+.product-details__addToCart {
+	background-color: #f2f2f2;
 	color: #00ab39;
+}
+
+.product-details__addToCart:hover {
+	background-color: #00AB39;
+	color: #fff;
+}
+
+
+.product-details__service1,
+.product-details__service2,
+.product-details__service3 {
+	border: 1px solid #c4c4c4;
+	padding-top: 10px;
+	margin-bottom: 15px;
+}
+
+.fa-2x {
+	color: #00ab39;
+}
+
+.footer__social {
+	background-color: #fff;
 }

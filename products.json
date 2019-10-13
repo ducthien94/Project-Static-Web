@@ -21,15 +21,87 @@
 	},
 	{
 		"glassBottles":[
-			{"id": "01", "name": "Chai bầu", "price": "15.000", "img": "chai-bau.png", "star": "3star.png"},
-			{"id": "02", "name": "Chai bóng đèn", "price": "25.000", "img": "chai-bong-den.png", "star": "3,5star.png"},
-			{"id": "03", "name": "Chai dây xách", "price": "18.000", "img": "chai-day-xach.png", "star": "5star.png"},
-			{"id": "04", "name": "Chai My Bottle", "price": "30.000", "img": "chai-my-bottle.png", "star": "4star.png"},
-			{"id": "05", "name": "Chai ngấn", "price": "18.000", "img": "chai-ngan.png", "star": "3,5star.png"},
-			{"id": "06", "name": "Chai sữa", "price": "12.000", "img": "chai-sua.png", "star": "5star.png"},
-			{"id": "07", "name": "Chai eo", "price": "20.000", "img": "chai-eo.png", "star": "3star.png"},
-			{"id": "08", "name": "Chai tam giác", "price": "25.000", "img": "chai-tam-giac.png", "star": "3star.png"},
-			{"id": "09", "name": "Chai vuông", "price": "15.000", "img": "chai-vuong.png", "star": "4star.png"}
+			{
+				"id": "01",
+				"name": "Chai bầu",
+				"price": "15.000",
+				"img": "chai-bau.png",
+				"star": "3star.png",
+				"class": "wood-lid",
+				"category": "wood"
+			},
+			{
+				"id": "02",
+				"name": "Chai bóng đèn",
+				"price": "25.000",
+				"img": "chai-bong-den.png",
+				"star": "3,5star.png",
+				"class": "aluminum-lid",
+				"category": "aluminum" 
+			},
+			{
+				"id": "03",
+				"name": "Chai dây xách",
+				"price": "18.000", 
+				"img": "chai-day-xach.png",
+				"star": "5star.png",
+				"class": "aluminum-lid",
+				"category": "aluminum"
+			},
+			{
+				"id": "04",
+				"name": "Chai My Bottle",
+				"price": "30.000",
+				"img": "chai-my-bottle.png",
+				"star": "4star.png",
+				"class": "plastic-lid",
+				"category": "plastic"
+			},
+			{
+				"id": "05",
+				"name": "Chai ngấn",
+				"price": "18.000",
+				"img": "chai-ngan.png",
+				"star": "3,5star.png",
+				"class": "tin-lid",
+				"category": "tin"
+			},
+			{
+				"id": "06",
+				"name": "Chai sữa",
+				"price": "12.000",
+				"img": "chai-sua.png",
+				"star": "5star.png",
+				"class": "tin-lid",
+				"category": "tin"
+			},
+			{
+				"id": "07",
+				"name": "Chai eo",
+				"price": "20.000",
+				"img": "chai-eo.png",
+				"star": "3star.png",
+				"class": "no-lid",
+				"category": "noLid"
+			},
+			{
+				"id": "08",
+				"name": "Chai tam giác",
+				"price": "25.000",
+				"img": "chai-tam-giac.png",
+				"star": "3star.png",
+				"class": "wood-lid",
+				"category": "wood"
+			},
+			{
+				"id": "09",
+				"name": "Chai vuông",
+				"price": "15.000",
+				"img": "chai-vuong.png",
+				"star": "4star.png",
+				"class": "aluminum-lid wood-lid",
+				"category": "aluminum"
+			}
 		]
 	},
 	{
@@ -76,7 +148,8 @@
 				"price": "15.000",
 				"img": "images/chai-thuy-tinh/chai-bau.png",
 				"img2":"images/anh-chi-tiet-sp/chai-bau.png",
-				"material": "Chai thủy tinh - Nút gỗ"
+				"material": "Chai thủy tinh - Nút gỗ",
+				"desc": "Sản phẩm chuyên dùng cho đựng nước ép, trà sữa, bánh kẹo các loại, hoặc dùng để trang trí, handmade... với tính thẩm mỹ cao."
 			},
 
 			{
@@ -85,7 +158,8 @@
 				"price": "25.000",
 				"img": "images/chai-thuy-tinh/chai-bong-den.png",
 				"img2": "images/anh-chi-tiet-sp/chai-bong-den.png",
-				"material": "Chai thủy tinh - Nắp nhôm"
+				"material": "Chai thủy tinh - Nắp nhôm",
+				"desc": "Sản phẩm chuyên dùng cho đựng nước ép, trà sữa, bánh kẹo các loại, hoặc dùng để trang trí, handmade... với tính thẩm mỹ cao."
 			},
 
 			{
@@ -94,7 +168,8 @@
 				"price": "18.000",
 				"img": "images/chai-thuy-tinh/chai-day-xach.png",
 				"img2": "images/anh-chi-tiet-sp/chai-day-xach.png",
-				"material": "Chai thủy tinh - Nắp inox, có dây"
+				"material": "Chai thủy tinh - Nắp inox, có dây",
+				"desc": "Sản phẩm thích hợp để đựng các loại nước ép, trà sữa, soda... tiện lợi để mang đi xa hoặc dùng tại chỗ."
 			},
 
 			{
@@ -103,7 +178,8 @@
 				"price": "30.000",
 				"img": "images/chai-thuy-tinh/chai-my-bottle.png",
 				"img2": "images/anh-chi-tiet-sp/chai-my-bottle.png",
-				"material": "Chai thủy tinh - Nắp nhựa"
+				"material": "Chai thủy tinh - Nắp nhựa",
+				"desc": "Sản phẩm được sử dụng nhiều để đựng các loại thức uống mang đi như nước ép, trà, nước lọc..."
 			},
 
 			{
@@ -112,7 +188,8 @@
 				"price": "18.000",
 				"img": "images/chai-thuy-tinh/chai-ngan.png",
 				"img2": "images/anh-chi-tiet-sp/chai-ngan.png",
-				"material": "Chai thủy tinh - Nắp thiếc vặn"
+				"material": "Chai thủy tinh - Nắp thiếc vặn",
+				"desc": "Sản phẩm thích hợp để đựng các loại nước ép, trà sữa, siro..."
 			},
 
 			{
@@ -121,7 +198,8 @@
 				"price": "12.000",
 				"img": "images/chai-thuy-tinh/chai-sua-nap-thiec.png",
 				"img2": "images/anh-chi-tiet-sp/chai-sua.png",
-				"material": "Chai thủy tinh - Nắp thiếc vặn"
+				"material": "Chai thủy tinh - Nắp thiếc vặn",
+				"desc": "Sản phẩm có thể đựng được nhiều loại thực phẩm như mật ong, nước giải khát, các loại sữa hạt, yến sào..."
 			},
 
 			{
@@ -130,7 +208,8 @@
 				"price": "20.000",
 				"img": "images/chai-thuy-tinh/chai-eo.png",
 				"img2": "images/anh-chi-tiet-sp/chai-eo.png",
-				"material": "Chai thủy tinh"
+				"material": "Chai thủy tinh",
+				"desc": "Sản phẩm thích hợp với quán cafe để đựng nước ép, sinh tố, trà đào và các loại nước giải khát."
 			},
 
 			{
@@ -139,7 +218,8 @@
 				"price": "25.000",
 				"img": "images/chai-thuy-tinh/chai-tam-giac.png",
 				"img2": "images/anh-chi-tiet-sp/chai-tam-giac.png",
-				"material": "Chai thủy tinh - Nút gỗ"
+				"material": "Chai thủy tinh - Nút gỗ",
+				"desc": "Sản phẩm chuyên dùng cho đựng nước ép, trà sữa, bánh kẹo các loại, hoặc dùng để trang trí, handmade... với tính thẩm mỹ cao."
 			},
 
 			{
@@ -148,7 +228,8 @@
 				"price": "15.000",
 				"img": "images/chai-thuy-tinh/chai-vuong.png",
 				"img2": "images/anh-chi-tiet-sp/chai-vuong.png",
-				"material": "Chai thủy tinh - Nút gỗ"
+				"material": "Chai thủy tinh - Nút gỗ",
+				"desc": "Sản phẩm thích hợp đựng các loại nước ép, sữa tươi, mật ong cùng nhiều loại thực phẩm dạng lỏng khác."
 			},
 
 			{
@@ -157,7 +238,8 @@
 				"price": "10.000",
 				"img": "images/hu-thuy-tinh/hu-luc-giac.png",
 				"img2": "images/anh-chi-tiet-sp/hu-luc-giac.png",
-				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+				"material": "Hũ thủy tinh - Nắp thiếc vặn",
+				"desc": "Sản phẩm thích hợp để đựng mật ong, dầu dừa, các loại bột trà xanh, bột nghệ, cám gạo cùng nhiều loại thực phẩm lỏng và khô khác. Ngoài ra với dung tích nhỏ gọn, sản phẩm còn được dùng để làm mẩu thử tặng khách hàng, làm hũ trang trí, đựng gia vị các loại."
 			},
 
 			{
@@ -166,7 +248,8 @@
 				"price": "60.000",
 				"img": "images/hu-thuy-tinh/hu-nap-cai.png",
 				"img2": "images/anh-chi-tiet-sp/hu-nap-cai.png",
-				"material": "Hũ thủy tinh - Nắp cài có gioăng kín"
+				"material": "Hũ thủy tinh - Nắp cài có gioăng kín",
+				"desc": "Sản phẩm thích hợp để đựng mật ong, dầu dừa, các loại bột trà xanh, bột nghệ, cám gạo cùng nhiều loại thực phẩm lỏng và khô khác. Ngoài ra với dung tích nhỏ gọn, sản phẩm còn được dùng để làm mẩu thử tặng khách hàng, làm hũ trang trí, đựng gia vị các loại."
 			},
 
 			{
@@ -175,7 +258,8 @@
 				"price": "9.000",
 				"img": "images/hu-thuy-tinh/hu-nghieng.png",
 				"img2": "images/anh-chi-tiet-sp/hu-nghieng.png",
-				"material": "Hũ thủy tinh - Nắp nhựa vặn"
+				"material": "Hũ thủy tinh - Nắp nhựa vặn",
+				"desc": "Sản phẩm đa dạng về cách sử dụng: làm deco, hạt giấy, đựng sao, đựng cát màu. Hũ cũng thường được sử dụng để đựng yến sào, đễ dàng đóng gói và mang đi, tăng thêm giá trị sản phẩm."
 			},
 
 			{
@@ -184,7 +268,8 @@
 				"price": "11.000",
 				"img": "images/hu-thuy-tinh/hu-ong.png",
 				"img2": "images/anh-chi-tiet-sp/hu-ong.png",
-				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+				"material": "Hũ thủy tinh - Nắp thiếc vặn",
+				"desc": "Sản phẩm đựng được nhiều loại thực phẩm, nguyên liệu khác nhau như mật ong, dầu dừa, bột trà xanh, matcha, tinh bột nghệ..."
 			},
 
 			{
@@ -193,7 +278,8 @@
 				"price": "8.000",
 				"img": "images/hu-thuy-tinh/hu-sua-chua.png",
 				"img2": "images/anh-chi-tiet-sp/hu-sua-chua.png",
-				"material": "Hũ thủy tinh - Nắp nhựa chụp"
+				"material": "Hũ thủy tinh - Nắp nhựa chụp",
+				"desc": "Sản phẩm phù hợp để đựng sữa chua, mật ong, bánh mứt, dầu dừa, dầu gấc cùng nhiều loại thực phẩm lỏng khác."
 			},
 
 			{
@@ -202,7 +288,8 @@
 				"price": "8.000",
 				"img": "images/hu-thuy-tinh/hu-tron-nap-thiec.png",
 				"img2": "images/anh-chi-tiet-sp/hu-tron-nap-thiec.png",
-				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+				"material": "Hũ thủy tinh - Nắp thiếc vặn",
+				"desc": "Sản phẩm phù hợp đựng các loại thực phẩm như mật ong, chanh đào ngâm, bánh mứt, tinh bột nghệ, trà xanh, gia vị cùng nhiều loại thực phẩm lỏng và khô khác."
 			},
 
 			{
@@ -211,7 +298,8 @@
 				"price": "40.000",
 				"img": "images/hu-thuy-tinh/hu-tron-nap-go.png",
 				"img2": "images/anh-chi-tiet-sp/hu-tron-nap-go.png",
-				"material": "Hũ thủy tinh - Nắp gỗ"
+				"material": "Hũ thủy tinh - Nắp gỗ",
+				"desc": "Sản phẩm có thể làm đựng gia vị, thực phẩm trong nhà bếp, hoặc làm lọ cắm hoa cực kỳ độc đáo..."
 			},
 
 			{
@@ -220,7 +308,8 @@
 				"price": "28.000",
 				"img": "images/hu-thuy-tinh/hu-trung.png",
 				"img2": "images/anh-chi-tiet-sp/hu-trung.png",
-				"material": "Hũ thủy tinh"
+				"material": "Hũ thủy tinh",
+				"desc": "Sản phẩm được thiết kế chuyên đựng các loại bột: bột nghệ, gel nghệ, trà xanh, hoặc đựng yến, dầu gấc, dầu dừa..."
 			},
 
 			{
@@ -229,7 +318,8 @@
 				"price": "8.000",
 				"img": "images/hu-thuy-tinh/hu-vuong.png",
 				"img2": "images/anh-chi-tiet-sp/hu-vuong.png",
-				"material": "Hũ thủy tinh - Nắp thiếc vặn"
+				"material": "Hũ thủy tinh - Nắp thiếc vặn",
+				"desc": "Sản phẩm có thể đựng được nhiều loại thực phẩm, mỹ phẩm làm đẹp như các loại gia vị, bột yến mạch, các loại mứt, mật ong, bột trà xanh."
 			},
 
 			{
@@ -238,7 +328,8 @@
 				"price": "25.000",
 				"img": "images/coc-thuy-tinh/coc-quai-hinh-bong.png",
 				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-bong.png",
-				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+				"material": "Cốc thủy tinh - Nắp nhôm vặn",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			},
 
 			{
@@ -247,7 +338,8 @@
 				"price": "25.000",
 				"img": "images/coc-thuy-tinh/coc-quai-dau-lau.png",
 				"img2": "images/anh-chi-tiet-sp/coc-quai-dau-lau.png",
-				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+				"material": "Cốc thủy tinh - Nắp nhôm vặn",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			},
 
 			{
@@ -256,7 +348,8 @@
 				"price": "25.000",
 				"img": "images/coc-thuy-tinh/coc-quai-hinh-bi.png",
 				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-bi.png",
-				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+				"material": "Cốc thủy tinh - Nắp nhôm vặn",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			},
 
 			{
@@ -265,7 +358,8 @@
 				"price": "25.000",
 				"img": "images/coc-thuy-tinh/coc-quai-hinh-cu.png",
 				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-cu.png",
-				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+				"material": "Cốc thủy tinh - Nắp nhôm vặn",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			},
 
 			{
@@ -274,7 +368,8 @@
 				"price": "25.000",
 				"img": "images/coc-thuy-tinh/coc-quai-hinh-dua.png",
 				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-dua.png",
-				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+				"material": "Cốc thủy tinh - Nắp nhôm vặn",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			},
 
 			{
@@ -282,7 +377,8 @@
 				"name": "Cốc quai hình vuông",
 				"price": "25.000", "img": "images/coc-thuy-tinh/coc-quai-hinh-vuong.png",
 				"img2": "images/anh-chi-tiet-sp/coc-quai-hinh-vuong.png",
-				"material": "Cốc thủy tinh - Nắp nhôm vặn"
+				"material": "Cốc thủy tinh - Nắp nhôm vặn",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			},
 
 			{
@@ -291,7 +387,8 @@
 				"price": "25.000",
 				"img": "images/coc-thuy-tinh/ly-loe.png", "link": "ly-loe.html",
 				"img2": "images/anh-chi-tiet-sp/ly-loe.png",
-				"material": "Ly thủy tinh"
+				"material": "Ly thủy tinh",
+				"desc": "Sản phẩm dùng đựng sinh tố, nước ép trái cây, dùng trang trí cho quán cafe, trà sữa, ly trang trí..."
 			},	
 
 			{
@@ -299,7 +396,8 @@
 				"name": "Lọ chiết serum",
 				"price": "9.000", "img": "images/lo-tinhdau-mypham/lo-chiet-serum.png",
 				"img2": "images/anh-chi-tiet-sp/lo-chiet-serum.png",
-				"material": "Thủy tinh, khoen nhựa, bóp cao su"
+				"material": "Thủy tinh, khoen nhựa, bóp cao su",
+				"desc": "Sản phẩm phù hợp đựng cho hầu hết các loại mỹ phẩm và các loại tinh dầu hiện nay như tinh dầu xả, dầu quế, dầu tràm..."
 			},
 
 			{
@@ -308,7 +406,8 @@
 				"price": "17.000",
 				"img": "images/lo-tinhdau-mypham/hu-nap-bac.png",
 				"img2": "images/anh-chi-tiet-sp/hu-nap-bac.png",
-				"material": "Hũ thủy tinh - Nắp nhựa vặn"
+				"material": "Hũ thủy tinh - Nắp nhựa vặn",
+				"desc": "Sản phẩm phù hợp đựng mỹ phẩm dạng soap như kem body, kem trộn, các loại muối spa, muối khoáng..."
 			},
 
 			{
@@ -317,7 +416,8 @@
 				"price": "9.000", 
 				"img": "images/lo-tinhdau-mypham/lo-dung-tinh-dau.png",
 				"img2": "images/anh-chi-tiet-sp/lo-dung-tinh-dau.png",
-				"material": "Lọ thủy tinh - Nắp nhựa"
+				"material": "Lọ thủy tinh - Nắp nhựa",
+				"desc": "Sản phẩm phù hợp đựng cho hầu hết các loại mỹ phẩm và các loại tinh dầu hiện nay như tinh dầu xả, dầu quế, dầu tràm..."
 			},
 
 			{
@@ -326,7 +426,8 @@
 				"price": "14.000",
 				"img": "images/lo-tinhdau-mypham/lo-bi-lan.png",
 				"img2": "images/anh-chi-tiet-sp/lo-bi-lan.png",
-				"material": "Lọ thủy tinh - Nắp nhựa"
+				"material": "Lọ thủy tinh - Nắp nhựa",
+				"desc": "Sản phẩm thích hợp để đựng các loại tinh dầu, đặc biệt là dầu dừa, giúp sản phẩm giữ được thời hạn sử dụng lâu nhất."
 			},
 
 			{
@@ -335,7 +436,8 @@
 				"price": "12.000",
 				"img": "images/lo-tinhdau-mypham/hu-nhom.png",
 				"img2": "images/anh-chi-tiet-sp/hu-nhom.png",
-				"material": "Hũ nhôm"
+				"material": "Hũ nhôm",
+				"desc": "Sản phẩm thích hợp để đựng các loại kem trộn, mask, kem, tinh chất,… mỹ phẩm dạng sệt hoặc khô."
 			},
 
 			{
@@ -344,7 +446,8 @@
 				"price": "18.000",
 				"img": "images/lo-tinhdau-mypham/chai-xit-phun-suong.png",
 				"img2": "images/anh-chi-tiet-sp/chai-xit-phun-suong.png",
-				"materail": "Chai nhựa"
+				"materail": "Chai nhựa",
+				"desc": "Sản phẩm chuyên đựng và bảo quản các loại tinh dầu"
 			},
 
 			{
@@ -353,7 +456,8 @@
 				"price": "20.000",
 				"img": "images/lo-tinhdau-mypham/lo-tinhdau-treo-xe.png", 
 				"img2": "images/anh-chi-tiet-sp/lo-tinh-dau-treo-xe.png",
-				"material": "Lọ thủy tinh - Nắp gỗ"
+				"material": "Lọ thủy tinh - Nắp gỗ",
+				"desc": "Sản phẩm chuyên đựng tinh dầu treo xe ô tô hay tinh dầu kẹp máy lạnh."
 			}    
 		]
 }

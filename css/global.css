@@ -264,7 +264,7 @@ body {
 	float: left;
 	padding: 10px 10px 0 10px;
 	border-radius: 0;
-	border: none;
+	border: 1px solid #c4c4c4;
 }
 
 .promotional-products__content .card-1,
@@ -274,11 +274,13 @@ body {
 	padding: 10px 10px 0 10px;
 	border-radius: 0;
 	border: none;
+	border: 1px solid #c4c4c4;
+	border-left: 0;
 }
 
 .promotional-products__content .card-body {
 	padding: 5px 0 6px 10px;
-	border: 1px solid #c4c4c4;
+	/*border: 1px solid #c4c4c4;*/
 	border-top-right-radius: 3px;
 	border-bottom-right-radius: 3px;
 }
@@ -295,18 +297,20 @@ body {
 .promotional-products__new-price {
 	font-style: normal;
 	font-weight: bold;
-	font-size: 20px;
+	font-size: 18px;
 	line-height: 23px;
 	color: #00AB39;
+	margin-bottom: 10px;
 }
 
 .promotional-products__old-price {
 	font-style: normal;
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
 	line-height: 19px;
 	text-decoration-line: line-through;
 	color: #929191;
+	margin-bottom: 10px;
 }
 
 /* Tin tức */
