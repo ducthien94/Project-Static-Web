@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <title>Liên hệ và góp ý</title>
-   <link rel="shorcut icon" type="image/png" href="images/favicon.png">
+  <link rel="shorcut icon" type="image/png" href="images/favicon.png">
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -56,20 +56,27 @@
                 <div class="form-header blue accent-1">
                   <h4 class="mt-2"></i>Hãy gửi tin nhắn cho chúng tôi:</h4>
                 </div>
+
                 <form>
-                  <div class="md-form">
-                    <input type="text" id="form-name" class="form-control" placeholder="Họ tên" required="required">
+                  <div class="input-box">
+                    <input type="text" name="name" id="name" required>
+                    <label for="name"><i class="far fa-file-alt"></i> Họ tên</label>
                   </div>
-                  <div class="md-form">
-                    <input type="email" id="form-email" class="form-control" placeholder="Email" required="required">
+
+                  <div class="input-box">
+                    <input type="email" name="email" id="email" required>
+                    <label for="email"><i class="far fa-envelope"></i> Email</label>
                   </div>
-                  <div class="md-form">
-                    <textarea id="form-text" class="form-control md-textarea" rows="6" placeholder="Nhập nội dung..."></textarea>
+                  <div class="input-box">
+                    <textarea name="note" id="note" cols="50" rows="7"></textarea>
+                    <label for="note"><i class="far fa-clipboard"></i> Ghi chú</label>
                   </div>
+
                   <div class="text-center">
                     <input id="form-submit" type="submit" value="Gửi">
                   </div>
                 </form>
+
               </div>
             </div>
             <!-- Form with header -->
@@ -151,8 +158,6 @@
 <script src="js/popper.min.js"></script>
 <!-- Bootstrap JS -->
 <script src="js/bootstrap.min.js"></script>
-<!-- JS -->
-<script src="js/script.js"></script>
 <!-- Contact JS -->
 <script src="js/contact.js"></script>
 

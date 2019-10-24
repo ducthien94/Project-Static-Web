@@ -1,0 +1,216 @@
+body {
+	background-color: #f2f2f2;
+}
+
+.breadcrumb {
+	background-color: #f2f2f2;
+}
+
+/* Lọc sản phẩm */
+
+.button-group {
+	background-color: #fff;
+	margin-bottom: 20px;
+}
+
+.filter-title {
+	background-color: #76bdd5;
+	color: #fff;
+	padding: 10px;
+	margin-bottom: 0;
+}
+
+
+.filter-list {
+	list-style: none;
+	padding-left: 10px;
+}
+
+.filter-item {
+	padding: 10px 5px 10px 20px;
+	border-bottom: 1px solid #f2f2f2;
+	position: relative;
+}
+
+.button {
+	outline: none;
+}
+
+.filter-item:hover button {
+	color: #00ab39;
+	font-weight: 500;
+}
+
+.filter-item:hover .list-style {
+	height: 20px;
+	top: 10px;
+}
+
+.filter-item button {
+	border: none;
+	background-color: #fff;
+}
+
+.list-style {
+	width: 5px;
+	height: 5px;
+	background-color: #00ab39;
+	position: absolute;
+	left: 5px;
+	top: 20px;
+	transition: .5s;
+}
+
+.open-filter {
+	cursor: pointer;
+	display: none; 
+}
+
+.close-filter {
+	position: fixed;
+	right: 5px;
+	top: 5px;
+	z-index: 999;
+	display: none;
+	cursor: pointer;
+	font-size: 20px;
+}
+
+
+/* Sản phẩm khuyến mãi */
+.promotional-products-list > p {
+	text-align: center;
+	padding: 10px;
+	background-color: tomato;
+	color: #fff;
+	margin-bottom: 0;
+}
+
+.promotional-products-item .card {
+	border: none;
+	padding: 0;
+	margin-bottom: 20px;
+}
+
+.promotional-products-item .card:hover img {
+	opacity: 0.6;
+	transform: scale(1.2);
+}
+
+.promotional-products-item .card:hover .no-gutters {
+	box-shadow: 3px 3px 10px gray;
+}
+
+.promotional-products-item .card img {
+	transition: 1s;
+}
+
+.promotional-products-item .card .no-gutters > div:first-child {
+	overflow: hidden;
+}
+
+.promotional-products-item .card-body {
+	padding: 10px;
+}
+
+.promotional-products-item .name {
+	padding: 0;
+	font-size: 14px;
+	margin-bottom: 4px;
+}
+
+.promotional-products-item .new-price {
+	padding: 0;
+	font-size: 16px;
+	margin-bottom: 4px;
+	font-weight: 700;
+	color: tomato;
+}
+
+.promotional-products-item .name a {
+	color: #000;
+}
+
+.promotional-products-item .name a:hover {
+	text-decoration: none;
+}
+
+.promotional-products-item .old-price {
+	text-decoration: line-through;
+	font-size: 14px;
+}
+
+
+
+/* ====== Sản phẩm ====== */
+
+/* Sắp xếp */
+.page-heading {
+	margin-bottom: 30px;
+}
+
+#sorts {
+	text-align: right;
+	font-size: 12px;
+	position: relative;
+}
+
+.sort-list {
+	list-style: none;
+	display: inline-block;
+}
+
+.sort-item {
+	display: inline-block;
+}
+
+.sort-item button {
+	padding: 5px 10px;
+	border: 1px solid #c4c4c4;
+	background-color: #f2f2f2;
+}
+
+.sort-item button:hover {
+	border: 1px solid #00ab39;
+	color: #00ab39;
+}
+
+.open-sort {
+	font-size: 12px;
+	border: 1px solid #c4c4c4;
+	padding: 5px 10px;
+	margin-bottom: 10px;
+	display: none;
+}
+
+/* Card sản phẩm */
+#products .card {
+	border: none;
+	background-color: #f2f2f2;
+	margin-bottom: 30px;
+}
+
+#products .card:hover img {
+	opacity: 0.7;
+}
+
+#products .card:hover {
+	transform: translateY(-10px);
+	transition: 1s;
+}
+
+#products .card:hover .card-body,
+#products .card:hover > a {
+	box-shadow: 5px 5px 10px gray;
+}
+
+
+#products .card-body {
+	background-color: #fff;
+}
+
+
+
+
+
+

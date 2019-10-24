@@ -1,1 +1,7 @@
+.header {
+	background-image: url("../images/banner.png");
+	min-height: 600px;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
 

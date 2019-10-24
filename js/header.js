@@ -1,27 +1,25 @@
- jQuery(document).ready(function($) {
+jQuery(document).ready(function($) {
   //Menu
   $(".menu-toggle").click(function() {
     $("nav").toggleClass('active');
   });
 
-  //Ẩn hộp tìm kiếm
-  $(".search-box").hide();
   
   //Gán sự kiện click icon Search hiện hộp tìm kiếm
   $("#icon-search").click(function() {
-    $(".search-box").show();
+    $(".search-box").show(600);
   });
 
   //Click icon x ẩn hộp tìm kiếm
   $(".close-search-box").click(function() {
-    $(".search-box").hide();
+    $(".search-box").hide(600);
   });
 
 
   
   // Lấy dữ liệu tất cả sản phẩm
   $.getJSON('products.json', function(data) {
-    let allProducts = data[6].allProducts;
+    let allProducts = data[2].allProducts;
     $('#search').keyup(function(){
       let keyWord = $(this).val();
       if(keyWord === '')  {
@@ -50,5 +48,114 @@
       resultContent += '</div>'
       $('#results').html(resultContent);
     });
-  })  
+  })
+
+
+
+  //=============== Giỏ hàng ===================
+
+  //Click icon Giỏ hàng hiện Giỏ hàng
+  $(".cart-icon").click(function(){
+    $(".cart-overlay").show(1000);
+  });
+
+  //Click x đóng Giỏ hàng
+  $(".close-cart").click(function(){
+    $(".cart-overlay").hide(1000);
+  });
+
+
+  //Gán sự kiện click vào icon thêm vào giỏ hàng của sp nào thì thêm sản phẩm đó vào giỏ hàng mục SẢN PHẨM NỔI BẬT. 
+  $(".add-to-cart").click(function() {
+    let productTitle = $(this).parent().parent().parent().children('p').text();
+    let productPrice = $(this).parent().parent().children("div:first").text();
+    addItemToCart(productTitle, productPrice);
+    updateCartTotal();
+  });
+
+  function addItemToCart(productTitle, productPrice) {
+
+    let cartItemTitle = $(".cart-items:first .cart-row > .cart-item > .cart-item__title");
+    for (let i = 0; i < cartItemTitle.length; i++) {
+      if (cartItemTitle[i].innerText == productTitle) {
+        alert("Sản phẩm đã có trong giỏ hàng");
+        return
+      }
+    }
+
+
+    $(".cart-items").append(` 
+
+      <div class="cart-row row">
+      <div class="cart-item col-4">
+      <span class="cart-item__title">${productTitle}</span>
+      </div>
+      <span class="cart-price col-2">${productPrice}</span>
+      <div class="cart-quantity col-2">
+      <input type="number" class="cart-quantity__input w-50" value="1">
+      </div>
+      <div class="col-2 cart-subTotal">
+      <span class="cart-subTotal__price">${productPrice}</span>
+      </div>
+      <div class="col-2"> <button class="cart-remove btn-danger">Xóa</button></div>
+      </div>
+
+      `)
+
+
+    //Click nút Xóa sẽ xóa sản phẩm khỏi giỏ hàng
+    $(".cart-remove").click(function removeCartItem(event) {
+     $(this).parent().parent().remove();
+     updateCartTotal();
+   });;
+
+    //Nếu số lượng <= 0 thì quay lại số lượng mặc định là 1.
+    $(".cart-quantity__input").change(function quantityChanged(event) {
+      if ((this.value) <= 0) {
+        this.value = 1;
+        alert("Số lượng tối thiểu là 1");
+      }
+      updateCartTotal();
+    });
+
+  };
+
+
+  function updateCartTotal() {
+    let total = 0;
+    let subTotal = 0;
+    let cartRows = $(".cart-items:first .cart-row");
+
+    for (let i = 0; i < cartRows.length; i++) {
+      let priceEl =  $(".cart-items:first .cart-row > span")[i];
+      let price = parseFloat(priceEl.innerText.replace('đ', ''));
+      let quantity =  $(".cart-items:first .cart-row > .cart-quantity > .cart-quantity__input")[i].value;
+
+      subTotal = (price * quantity) + `.000 đ`;
+      $(".cart-items:first .cart-row > .cart-subTotal .cart-subTotal__price")[i].innerText = subTotal;
+      total = total + parseFloat(subTotal.replace("đ", ""));
+    }
+
+    $(".cart-total__price:first").html(total + `.000 đ`);
+
+  };
+
+  // Thêm vào giỏ hàng mục Sản phẩm khuyến mãi
+  $(".add-to-cart1").click(function() {
+    let productTitle1 = $(this).parent().parent().children('h6').text();
+    let productPrice1 = $(this).parent().parent().children("p:first").text();
+    addItemToCart(productTitle1, productPrice1);
+    updateCartTotal();
+  });
+
+
+  $(".btn-pay").click(function(event) {
+    let cartRow = $(".cart-row");
+    if (cartRow.length == 0) {
+      event.preventDefault();
+      alert("Hãy thêm sản phẩm vào giỏ hàng để tiếp tục");
+    }
+  });
+
+
 });

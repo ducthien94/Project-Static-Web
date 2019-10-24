@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Sản phẩm</title>
+  <link rel="shorcut icon" type="image/png" href="images/favicon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Respomnsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Header -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- Product CSS -->
+  <link rel="stylesheet" href="css/product2.css">
+  
+</head>
+<body>
+
+ <!-- Header -->
+ <div id="menu"></div>
+
+ <!-- Main -->
+ <main>
+  <div class="container mx-auto">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home text-success"></i>  Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+
+      <div class="col-md-3 col-12 filter">
+        <div class="filter-box">
+          <div class="button-group">
+            <p class="filter-title text-center">Lọc theo danh mục</p>
+            <ul class="filter-list">
+              <li class="filter-item"><div class="list-style"></div><button class="button1 is-checked" data-filter="*">Tất cả sản phẩm</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".glass-bottle">Chai thủy tinh</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".glass-jar">Hũ thủy tinh</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".glass-cup">Cốc thủy tinh</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".cosmetic-bottle">Lọ tinh dầu, mỹ phẩm</button></li>
+            </ul>           
+          </div>
+
+          <div class="button-group">
+            <p class="filter-title text-center">Lọc theo chất liệu</p>
+            <ul class="filter-list">
+              <li class="filter-item"><div class="list-style"></div><button class="button1 is-checked" data-filter="*">Tất cả chất liệu</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".glass">Thủy tinh</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".plastic">Nhựa</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".aluminum">Nhôm</button></li>
+            </ul>           
+          </div>
+
+          <div class="button-group">
+            <p class="filter-title text-center">Lọc theo loại nắp</p>
+            <ul class="filter-list">
+              <li class="filter-item"><div class="list-style"></div><button class="button1 is-checked" data-filter="*">Tất cả loại nắp</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".tin-lid">Nắp thiếc</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".aluminum-lid">Nắp nhôm</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".wood-lid">Nút gỗ - Nắp gỗ</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".glass-lid">Nắp thủy tinh</button></li>
+              <li class="filter-item"><div class="list-style"></div><button class="button1" data-filter=".no-lid">Không nắp</button></li>
+            </ul>           
+          </div>
+        </div>
+
+        <div class="close-filter" title="Ẩn lọc"><i class="far fa-window-close"></i></div>
+
+        <div class="promotional-products-list">
+          <p class="">Sản phẩm khuyến mãi</p>
+          <div class="container">
+            <div class="row  promotional-products-item"></div>
+          </div>
+        </div>
+
+      </div> 
+      <!-- col-3 -->
+
+
+      <div class="col-md-9 col-12" style="position: relative;">
+        <p class="page-heading">Sản phẩm</p>
+
+        <div id="sorts" class="button-group1">
+          <ul class="sort-list">
+           <span>Sắp xếp theo: </span>
+           <li class="sort-item"><button class="button2">Mặc định </button></li>
+           <li class="sort-item"><button class="button2" data-sort-by="products__title">Tên A-Z</button></li>
+           <li class="sort-item"><button class="button2" data-sort-by="products__price">Giá tăng dần</button></li>
+         </ul>
+         <span class="open-filter" title="Lọc sản phẩm"><i class="fas fa-filter"></i> Lọc </span>
+         <span class="open-sort"><i class="fas fa-sort"></i> Sắp xếp</span>
+       </div>
+
+       <div id="products" class="row"></div>
+
+       <!-- pagination -->
+       <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">
+              <span aria-hidden="true">&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- pagination -->
+
+    </div>
+
+  </div>
+  <!-- row -->
+
+
+</div>
+<!-- container -->
+
+</main>
+
+<!-- Back to top -->
+<div class="back-to-top" href="#" title="Quay lại đầu trang">
+  <i class="fas fa-chevron-circle-up fa-2x"></i>
+</div>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2071419156449295"
+  logged_in_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi."
+  logged_out_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi.">
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-3.4.1.js"></script>
+<!-- Popper.js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Isotope JS-->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<!-- Product JS -->
+<script src="js/product2.js"></script>
+
+
+</body>
+</html>
+
+
+
+

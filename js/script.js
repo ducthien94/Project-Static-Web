@@ -1,4 +1,8 @@
 $(function() {
+
+	//Gọi Wow js
+	new WOW().init();
+	
 	// Gọi header.html, footer.html, menu.html
 	$("#header").load("header.html");
 	$("#menu").load("menu.html");
@@ -21,18 +25,18 @@ $(function() {
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>					
 				</div>
-				<p class="card-title hot-products__title">${element.name}</p>
+				<p class="card-title product-title hot-products__title">${element.name}</p>
 				<hr>
 				<div>				       
 				<div class="card-text hot-products__price">${element.price} <sup>đ</sup></div>
 				<div class="hot-products__btn">
-				<a href="product-details.html#${element.id}" target="_blank" class="btn__buy-now link-to-product"">Mua ngay</a>
-				<a href="#" class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus"></i></a>
+				<a href="product-details.html#${element.id}" target="_blank" class="btn__buy-now link-to-product">Mua ngay</a>
+				<span class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus"></i></span>
 				</div>
 				</div>    
 				</div> 
 				</div>
-				`)
+			`)
 		});
 
 		// Đổ dữ liệu vào Sản phẩm khuyến mãi
@@ -46,12 +50,12 @@ $(function() {
 				</div>
 				<div class="col-md-7 col-12">
 				<div class="card-body">
-				<h6 class="card-title promotional-products__title">${element.name}</h6>
+				<h6 class="card-title product-title promotional-products__title">${element.name}</h6>
 				<p class="card-text promotional-products__new-price">${element.newPrice} <sup>đ</sup></p>
 				<p class="card-text promotional-products__old-price">${element.oldPrice} <sup>đ</sup></p>
 				<div class="promotional-products__btn">
 				<a href="product-details.html#${element.id}" target="_blank" class="btn__buy-now link-to-product">Mua ngay</a>
-				<a href="#" class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus"></i></a>
+				<span class="add-to-cart1" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus"></i></span>
 				</div>
 				</div>
 				</div>
@@ -88,7 +92,6 @@ $(function() {
 		$("html, body").animate({ scrollTop: 0 }, 600); 
 		return false; 
 	});
-
 
 	
 });

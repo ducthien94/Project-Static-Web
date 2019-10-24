@@ -45,6 +45,10 @@ body {
 	font-size: 18px;
 }
 
+.hot-news p {
+	padding-top: 0;
+}
+
 .news-category ul,
 .news-category1 ul {
 	list-style: none;

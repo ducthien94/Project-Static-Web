@@ -1,5 +1,6 @@
 .menu-wrap {
 	background-color: #00ab39;
+	position: relative;
 }
 
 .menu {
@@ -30,29 +31,7 @@
 	position: relative;
 }
 
-/*.menu nav ul li .sub-menu {
-	position: absolute;
-	display: none;
-	width: 240px;
-	background-color: #00802b;
-	z-index: 222;
-}
 
-.menu nav ul li:hover .sub-menu {
-	display: block;
-}
-
-.menu .sub-menu li {
-	border-bottom: 1px solid #fff;
-}
-
-.menu .sub-menu li:last-child {
-	border-bottom: none;
-}
-
-.menu .sub-menu li:hover a {
-	background-color: #00cc44;
-}*/
 .menu nav ul li a {
 	height: 55px;
 	line-height: 55px;
@@ -61,36 +40,170 @@
 	color: #fff;
 	display: block;
 }
-
-.menu nav ul li a:hover {
-	background: #00802b;
+/*new code*/
+.menu nav ul li a:before {
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: tomato;
+	color: #fff;
+	padding: 0 20px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: bottom;
 }
+
+.menu nav ul li a:hover:before {
+	transform: rotateX(0deg) translateY(0px);
+
+}
+
+.menu nav ul li a:after {
+	content: attr(title);
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #00ab39;
+	color: #fff;
+	padding: 0 20px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(0deg) translateY(0px);
+	transform-origin: bottom;
+}
+
+.menu nav ul li a:hover:after {
+	transform: rotateX(90deg) translateY(50px);
+}
+
+
+/* Hover vào icon Tìm kiếm */
+#icon-search:before {
+	content: '\f002';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	background-color: tomato;
+	padding: 0 20px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: bottom;
+}
+
+#icon-search:hover:before {
+	transform: rotateX(0deg) translateY(0px);
+}
+
+#icon-search:after {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f002';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #00ab39;
+	color: #fff;
+	padding: 0 20px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(0deg) translateY(0px);
+	transform-origin: bottom;
+}
+
+#icon-search:hover:after {
+	transform: rotateX(90deg) translateY(50px);
+}
+
+
+/* Hover icon giỏ hàng */
+#icon-shopping-cart:before {
+	content: '\f07a';
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 55px;
+	line-height: 55px;
+	color: #fff;
+	background-color: tomato;
+	padding: 0 20px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(90deg) translateY(50px);
+	transform-origin: bottom;
+}
+
+#icon-shopping-cart:hover:before {
+	transform: rotateX(0deg) translateY(0px);
+}
+
+#icon-shopping-cart:after {
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: '\f07a';
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: #00ab39;
+	color: #fff;
+	padding: 0 20px;
+	transform-style: preserve-3d;
+	transition: 0.5s;
+	transform: rotateX(0deg) translateY(0px);
+	transform-origin: bottom;
+}
+
+#icon-shopping-cart:hover:after {
+	transform: rotateX(90deg) translateY(50px);
+}
+
+
+
+
+
+/*new code*/
+
 
 .menu-toggle {
 	color: #fff;
-	float: right;
 	line-height: 55px;
 	font-size: 24px;
 	cursor: pointer;
 	display: none; 
+	position: absolute;
+	top: 0;
+	right: 30px;
 }
 
 
-
+/* Ô tìm kiếm */
 .search-box {
 	position: fixed;
+	top: 0;
 	z-index: 999;
 	width: 100%;
 	height: 100%;
 	background-color: #000000e9;
 	padding: 50px 250px;
+	display: none;
 }
 
 .close-search-box {
 	color: #fff;
-	font-weight: 24px;
-	float: right;
 	cursor: pointer;
+	position: fixed;
+	top: 10px;
+	right: 20px;
+
 }
 
 .search-box form {
@@ -107,4 +220,123 @@
 #results .link, #results .price {
 	color: #000;
 	font-size: 20px;
+}
+
+
+/* Giỏ hàng */
+.cart-overlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #FF7A00b9;
+	z-index: 888;
+	display: none;
+}
+
+.cart {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 70%;
+	height: 100%;
+	z-index: 777;
+	padding: 20px;
+	background-color: #ffcc80;
+}
+
+.close-cart {
+	cursor: pointer;
+}
+
+.cart-heading {
+	font-family: 'Dancing Script';
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 50px; 
+}
+
+.cart-items {
+	height: 300px;
+	overflow: auto;
+}
+
+.cart-title {
+	padding: 0 15px;
+}
+
+.cart-title-item {
+	font-weight: 500;
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 10px;
+}
+
+.cart-row {
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-bottom: 1px solid #f2f2f2;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.cart-item__img {
+	width: 35%;
+	height: auto;
+}
+
+.cart-remove {
+	padding: 0 10px;
+	border-radius: 10px;
+}
+
+.cart-total {
+	text-align: right;
+	padding-right: 10%;
+}
+
+.cart-btn {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.btn-continue-shopping, .btn-pay {
+	width: 130px;
+	padding: 8px 15px;
+	border-radius: 10px;
+}
+
+.btn-continue-shopping {
+	border: 1px solid #333;
+	color: #333333;
+	margin-right: 10px;
+}
+
+.btn-continue-shopping:hover {
+	background-color: #333;
+	color: #fff;
+	text-decoration: none;
+}
+
+.btn-pay {
+	border: 1px solid #007bff;
+	background-color: #007bff;
+	color: #fff;
+	margin-left: 10px;
+}
+
+.btn-pay:hover {
+	background-color: #003166;
+	text-decoration: none;
+	color: #fff;
+	border-color: #fff;
+}
+
+.cart-quantity__input {
+	padding-left: 3px;
+}
+
+.cart-empty {
+	font-style: italic;
+	margin-top: 15px;
 }

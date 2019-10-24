@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!-- Required meta tags -->
+  <title>Hướng dẫn mua hàng</title>
+  <link rel="shorcut icon" type="image/png" href="images/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Slick CSS -->
+  <link rel="stylesheet" href="css/slick.css"/>
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Header -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- News CSS -->
+  <link rel="stylesheet" href="css/news.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <div id="menu"></div>
+
+  <main>
+    <div class="container">
+
+      <!-- Breadcrums -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home icon-fa text-success"></i> Trang chủ</a></li>
+          <li class="breadcrumb-item active">Hướng dẫn mua hàng</li>
+        </ol>
+      </nav>
+      
+      <p class="page-heading">Hướng dẫn mua hàng</p>
+
+      <p>Khách hàng có thể lựa chọn một trong những hình thức mua hàng dưới đây:</p>
+      <p>1. Đặt hàng trực tiếp trên <a href="index.html">website</a> này.</p>
+      <p>2. Đặt hàng trên page <a href="https://facebook.com/cunggcappchailo">facebook</a> của chúng tôi.</p>
+      <p>3. Đặt hàng qua hotline <strong>0973863894</strong>.</p>
+      <p>4. Ngoài ra, khách hàng có thể đến trực tiếp cửa hàng để xem trực tiếp sản phẩm và mua hàng.</p>
+
+  </div>
+</main>
+
+
+<!-- Back to top -->
+<div class="back-to-top" href="#" title="Quay lại đầu trang">
+  <i class="fas fa-chevron-circle-up fa-2x"></i>
+</div>
+<!-- Footer -->
+<div id="footer"></div>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2071419156449295"
+  logged_in_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi."
+  logged_out_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi.">
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-3.4.1.js"></script>
+<!-- Popper.js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<script>
+   $(document).ready(function() {
+
+     //Gọi menu và footer
+     $("#menu").load("menu.html");
+     $("#footer").load("footer.html");
+
+
+    // Back to top
+    $(window).scroll(function(){ 
+        if ($(this).scrollTop() > 100) { 
+            $('.back-to-top').fadeIn(); 
+        } else { 
+            $('.back-to-top').fadeOut(); 
+        } 
+    }); 
+    $('.back-to-top').click(function(){ 
+        $("html, body").animate({ scrollTop: 0 }, 600); 
+        return false; 
+    });
+
+});
+</script>
+
+</body>
+</html>
+

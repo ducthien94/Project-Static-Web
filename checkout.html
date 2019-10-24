@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Thanh toán</title>
+  <link rel="shorcut icon" type="image/png" href="images/favicon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Global CSS -->
+  <link rel="stylesheet" href="css/global.css">
+  <!-- Respomnsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Header -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- Contact CSS -->
+  <link rel="stylesheet" href="css/checkout.css">
+
+  
+</head>
+<body>
+  <!-- Header -->
+  <div id="menu"></div>
+
+  <!-- Main -->
+  <main>
+    <div class="container checkout">
+      <!-- Breadcrums -->
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home icon-fa text-success"></i> Trang chủ</a></li>
+          <li class="breadcrumb-item active">Thanh toán</li>
+        </ol>
+      </nav>
+
+      <h2 class="page-heading">Thông tin thanh toán</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6 col-12">
+            <p class="info">1. Thông tin khách hàng</p>
+
+            <div class="input-box">
+             <label for="name"><i class="far fa-file-alt"></i> Họ tên</label>
+             <input type="text" name="name" id="name">
+           </div>
+
+           <div class="input-box">
+             <label for="email"><i class="far fa-envelope"></i> Email</label>
+             <input type="email" name="email" id="email">
+           </div>
+
+           <div class="input-box">
+             <label for="phone"><i class="fas fa-phone-alt"></i> Số điện thoại</label>
+             <input type="text" name="phone" id="phone">
+           </div>
+
+           <div class="input-box">
+            <label for="address"><i class="fas fa-map-marker-alt"></i> Địa chỉ</label>
+            <input type="text" name="address" id="address">
+          </div>
+
+          <div class="input-box note">
+            <label for="note"><i class="far fa-clipboard"></i> Ghi chú</label>
+            <textarea name="note" id="note" cols="50" rows="4"></textarea>
+          </div>
+        </div>
+
+        <div class="col-md-1 col-12"></div>
+
+        <div class="col-md-5 col-12">
+          <p class="payments">2. Hình thức thanh toán</p>
+          <input type="radio" name="payments" id="on-delivery" value="on-delivery"><label for="on-delivery">Thanh toán khi nhận hàng</label> <br> 
+          <input type="radio" name="payments" id="transfer" value="transfer"><label for="transfer">Chuyển khoản</label>
+
+          <div class="transfer-info">
+            <p class="transfer-info__title">Thông tin chuyển khoản</p>
+            <p class="transfer-info__text">Quý khách vui lòng chuyển khoản vào một trong các tài khoản sau đây:</p>
+            <p class="transfer-info__bank">* Ngân hàng Agribank</p>
+            <p class="transfer-info__name">Chủ tài khoản: Dương Thu Hương</p>
+            <p class="transfer-info__accNumber">Số tài khoản: <span class="accNumber">2890205178528 - CN Vĩnh Phúc 2</span></p>
+            <hr>
+            <p class="transfer-info__bank">* Ngân hàng Techcombank</p>
+            <p class="transfer-info__name">Chủ tài khoản: Khuất Đức Thiện</p>
+            <p class="transfer-info__accNumber">Số tài khoản: <span class="accNumber">19032248473010</span></p>
+          </div>
+        </div>
+
+        <input type="submit" value="Xác nhận">
+
+      </div>
+    </form>
+  </div>
+</main>  
+
+<!-- Back to top -->
+<div class="back-to-top" href="#" title="Quay lại đầu trang">
+  <i class="fas fa-chevron-circle-up fa-2x"></i>
+</div>
+
+<!-- Footer -->
+<div id="footer"></div>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2071419156449295"
+  logged_in_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi."
+  logged_out_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi.">
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-3.4.1.js"></script>
+<!-- Popper.js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Checkout JS -->
+<script src="js/checkout.js"></script>
+
+</body>
+</html>

@@ -14,11 +14,11 @@
 	margin-bottom: 16px;
 }
 
-.product-details__submit {
+.product-details__buyNow {
 	margin-bottom: 16px;
 }
 
-.product-details__submit,
+.product-details__buyNow,
 .product-details__addToCart {
 	width: 160px;
 	padding: 5px;
@@ -27,12 +27,12 @@
 	border: 1px solid #00ab39;
 }
 
-.product-details__submit {
+.product-details__buyNow {
 	background-color: #00ab39;
 	color: #fff; 
 }
 
-.product-details__submit:hover {
+.product-details__buyNow:hover {
 	background-color: #f2f2f2;
 	color: #00ab39;
 }

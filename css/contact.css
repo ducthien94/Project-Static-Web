@@ -1,10 +1,30 @@
-#form-name, #form-email, #form-text, h4 {
-	margin-bottom: 20px;
-	padding: 15px 15px 15px 10px;
+
+form {
+	margin-top: 40px;
 }
 
-#form-name, #form-email {
-	height: 45px;
+.input-box {
+	position: relative;
+}
+
+.input-box input, .input-box textarea {
+	border: none;
+	outline: none;
+	border-bottom: 1px solid #c4c4c4;
+	width: 100%;
+	margin-bottom: 30px;
+	padding: 5px 0 5px;
+	background-color: #fff;
+	font-size: 16px;
+}
+
+.input-box label {
+	position: absolute;
+	top: -25px;
+	left: 0;
+	padding: 5px 0;
+	font-size: 14px;
+	color: #777373;
 }
 
 #form-submit {
@@ -22,6 +42,5 @@
 .gg-map {
 	margin-bottom: 0;
 }
-
 
 

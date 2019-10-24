@@ -1,0 +1,65 @@
+
+.info {
+  margin-bottom: 40px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box input, .input-box textarea {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #c4c4c4;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px 0 5px;
+   background-color: #fff;
+}
+
+
+.input-box label {
+ margin-bottom: 0;
+ font-size: 14px;
+}
+
+.note {
+  margin-top: 30px;
+}
+
+input[type="submit"] {
+  padding: 5px 15px;
+  background-color: #00ab39;
+  color: #fff;
+  border-radius: 10px;
+  outline: none;
+  margin: 0 auto;
+}
+
+.info, .payments {
+  font-weight: 500;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+.transfer-info {
+  margin-top: 20px;
+  display: none;
+}
+
+.transfer-info__title {
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.transfer-info__bank {
+  font-weight: 500;
+}
+
+.accNumber {
+  font-weight: 500;
+  font-size: 18px;
+  color: tomato;
+}
