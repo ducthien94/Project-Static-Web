@@ -493,6 +493,11 @@
 			order: 2;
 		}
 
+		/* =====Contact.html */
+		.input-box .form__text {
+			top: -20px;
+		}
+
 		/*=====product-details.html=======*/
 		.product-details__name {
 			margin-top: 15px;
