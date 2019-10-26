@@ -546,6 +546,8 @@
 			z-index: 888;
 			background-color: lightblue;
 			display: none;
+			height: 600px;
+			overflow: auto;
 		}
 
 		.open-filter {
