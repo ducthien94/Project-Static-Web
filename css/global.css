@@ -159,6 +159,10 @@ body {
 	transform: translateY(-10px);
 }
 
+.hot-products__content .card:hover .card-body {
+	box-shadow: 0 10px 10px -10px gray;
+}
+
 .hot-products__img {
 	overflow: hidden;
 }
@@ -216,6 +220,11 @@ body {
 .btn__all-products:hover a {
 	text-decoration: none;
 	color: #fff;
+}
+
+.add-to-cart:hover .fa-cart-plus,
+.add-to-cart1:hover .fa-cart-plus {
+	color: tomato;
 }
 
 /* Ảnh trang trí (Section 4) */

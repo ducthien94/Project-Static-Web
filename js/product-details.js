@@ -1,5 +1,10 @@
 jQuery(document).ready(function($) {
 	
+	//Gọi menu.html, footer.html
+	$("#menu").load("menu.html");
+	$("#footer").load("footer.html")
+
+
 	//Lấy ID từ URL
 	let id = document.URL.slice(-2);
 
@@ -11,7 +16,7 @@ jQuery(document).ready(function($) {
 			<nav aria-label="breadcrumb">
 			<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="index.html"><i class="fas fa-home text-success"></i>  Trang chủ</a></li>
-			<li class="breadcrumb-item"><a href="product.html">Sản phẩm</a></li>
+			<li class="breadcrumb-item"><a href="product2.html">Sản phẩm</a></li>
 			<li class="breadcrumb-item active" aria-current="page">${product[id-1].name}</li>
 			</ol>
 			</nav>
@@ -59,19 +64,20 @@ jQuery(document).ready(function($) {
     $(".add-to-cart").click(function(event) {
       let productName = $(this).parent().parent().children('h4').text();
       let productPrice = $(this).parent().parent().children('p:last').children('span:last').text();
-      addItemToCart(productName, productPrice);
+      let productQuantity = $(this).parent().children('input').val();
+      addItemToCart(productName, productPrice, productQuantity);
       updateCartTotal();
     });
 
 
     //Function thêm sản phẩm vào giỏ hàng
-    function addItemToCart(productName, productPrice) {
+    function addItemToCart(productName, productPrice, productQuantity) {
 
       let cartItemTitle = $(".cart-items:first .cart-row > .cart-item > .cart-item__title");
       for (let i = 0; i < cartItemTitle.length; i++) {
         if (cartItemTitle[i].innerText == productName) {
           alert("Sản phẩm đã có trong giỏ hàng");
-          return
+          return;
         }
       }
 
@@ -84,7 +90,7 @@ jQuery(document).ready(function($) {
         </div>
         <span class="cart-price col-2">${productPrice}</span>
         <div class="cart-quantity col-2">
-        <input type="number" class="cart-quantity__input w-50" value="1">
+        <input type="number" class="cart-quantity__input w-50" value="${productQuantity}">
         </div>
         <div class="col-2 cart-subTotal">
         <span class="cart-subTotal__price">${productPrice}</span>

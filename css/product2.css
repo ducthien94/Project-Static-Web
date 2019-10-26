@@ -209,6 +209,10 @@ body {
 	background-color: #fff;
 }
 
+.add-to-cart2:hover .fa-cart-plus {
+	color: tomato;
+} 
+
 
 
 

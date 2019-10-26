@@ -12,7 +12,7 @@
     });
 
 
-
+    //Validate form thanh toán
     $("form").submit(function(event) {
 
       let onDelivery = $("#on-delivery").prop('checked');

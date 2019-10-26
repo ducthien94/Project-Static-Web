@@ -20,6 +20,7 @@
 
 .menu nav {
 	float: right;
+	height: 55px;
 }
 
 .menu nav ul {
@@ -50,7 +51,7 @@
 	color: #fff;
 	padding: 0 20px;
 	transform-style: preserve-3d;
-	transition: 0.5s;
+	transition: 0.7s;
 	transform: rotateX(90deg) translateY(50px);
 	transform-origin: bottom;
 }
@@ -69,7 +70,7 @@
 	color: #fff;
 	padding: 0 20px;
 	transform-style: preserve-3d;
-	transition: 0.5s;
+	transition: 0.7s;
 	transform: rotateX(0deg) translateY(0px);
 	transform-origin: bottom;
 }

@@ -18,4 +18,34 @@
         return false; 
     });
 
+
+    //Validate form
+
+    $("form").submit(function(event) {
+
+      if(!$("#name").val()) {
+        event.preventDefault();
+        alert("Bạn cần nhập họ tên");
+    }
+
+    if(!$("#email").val()) {
+        event.preventDefault();
+        alert("Bạn cần nhập email");
+    }
+
+    if(!$("#note").val()) {
+        event.preventDefault();
+        alert("Bạn cần nội dung");
+    }
+
+    if ($("#name").val() && $("#email").val() && $("#note").val()) {
+        alert("Gửi tin nhắn thành công");
+    }     
+
+});
+
+
+
+
+
 });

@@ -25,6 +25,8 @@
 	border-radius: 10px;
 	outline: none;
 	border: 1px solid #00ab39;
+	cursor: pointer;
+	text-align: center; 
 }
 
 .product-details__buyNow {
@@ -33,18 +35,20 @@
 }
 
 .product-details__buyNow:hover {
-	background-color: #f2f2f2;
+	background-color: #fff;
 	color: #00ab39;
 }
 
 .product-details__addToCart {
-	background-color: #f2f2f2;
+	background-color: #fff;
 	color: #00ab39;
 }
 
-.product-details__addToCart:hover {
-	background-color: #00AB39;
+.product-details__addToCart:hover,
+.product-details__buyNow:hover {
+	background-color: tomato;
 	color: #fff;
+	border-color: tomato;
 }
 
 
@@ -58,8 +62,4 @@
 
 .fa-2x {
 	color: #00ab39;
-}
-
-.footer__social {
-	background-color: #fff;
 }
