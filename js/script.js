@@ -13,54 +13,54 @@ $(function() {
 		let hotProducts = data[0].hotProducts;	
 		hotProducts.forEach( function(element, index) {
 			$("#hot-products").append(`
-				<div data-id="${element.id}" class="card col-12 col-md-4 card-${index}">
-				<div class="hot-products__img">
-				<a href="product-details.html#${element.id}" target="_blank" class="link-to-product"><img src="images/sp-noi-bat/${element.img}" class="card-img-top" alt="${element.name}" title="${element.name}"></a>
-				</div>
-				<div class="card-body text-center pt-2">
+				<div class="col-md-4 col-sm-4 col-6 wrap-card wrap-card-${index}">
+				<div class="card">
+				<img src="images/sp-noi-bat/${element.img}" class="card-img-top" alt="${element.name}" title="${element.name}">
+				<div class="card-body">
 				<div>
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
 				<i class="fas fa-star"></i>
-				<i class="fas fa-star"></i>					
+				<i class="fas fa-star"></i>         
 				</div>
-				<p class="card-title product-title hot-products__title">${element.name}</p>
 				<hr>
-				<div>				       
-				<div class="card-text hot-products__price">${element.price} <sup>đ</sup></div>
-				<div class="hot-products__btn">
-				<a href="product-details.html#${element.id}" target="_blank" class="btn__buy-now link-to-product">Mua ngay</a>
-				<span class="add-to-cart" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus"></i></span>
+				<p class="card-title">${element.name}</p>
+				<p class="card-text">${element.price} <sup>đ</sup></p>
 				</div>
-				</div>    
-				</div> 
 				</div>
-			`)
+				<div class="overlay">
+				<div class="btn-detail">Xem chi tiết</div>
+				<div class="btn-addToCart">Thêm vào giỏ</div>
+				</div>
+				</div>  
+				`)
 		});
 
 		// Đổ dữ liệu vào Sản phẩm khuyến mãi
 		let promotionalProducts = data[1].promotionalProducts;
 		promotionalProducts.forEach(function(element,index) {
 			$(".promotional-products__content").append(`
-				<div data-id="${element.id}" class="card mb-2 col-md-6 card-${index}">
-				<div class="row no-gutters">
-				<div class="col-md-5 col-12 promotional-products__img">
-				<a href="product-details.html#${element.id}" target="_blank" class="link-to-product"><img src="images/sp-khuyen-mai/${element.img}" class="card-img" alt="${element.name}" title="${element.name}"></a>
-				</div>
-				<div class="col-md-7 col-12">
-				<div class="card-body">
-				<h6 class="card-title product-title promotional-products__title">${element.name}</h6>
-				<p class="card-text promotional-products__new-price">${element.newPrice} <sup>đ</sup></p>
-				<p class="card-text promotional-products__old-price">${element.oldPrice} <sup>đ</sup></p>
-				<div class="promotional-products__btn">
-				<a href="product-details.html#${element.id}" target="_blank" class="btn__buy-now link-to-product">Mua ngay</a>
-				<span class="add-to-cart1" title="Thêm vào giỏ hàng"><i class="fas fa-cart-plus"></i></span>
-				</div>
-				</div>
-				</div>
-				</div>
-				</div>
+				<div class="wrap-card2 wrap-card2-${index} col-md-6">
+				<div data-id="${element.id}" class="card">
+                  <div class="row no-gutters">
+                    <div class="col-md-5 col-12 promotional-products__img">
+                      <a href="product-details.html#${element.id}" target="_blank" class="link-to-product"><img src="images/sp-khuyen-mai/${element.img}" class="card-img" alt="${element.name}" title="${element.name}"></a>
+                    </div>
+                    <div class="col-md-7 col-12">
+                      <div class="card-body">
+                        <h6 class="card-title product-title promotional-products__title">${element.name}</h6>
+                        <p class="card-text promotional-products__new-price">${element.newPrice} <sup>đ</sup></p>
+                        <p class="card-text promotional-products__old-price">${element.oldPrice} <sup>đ</sup></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="overlay2">
+                    <div class="btn-detail2">Xem chi tiết</div>
+                    <div class="btn-addToCart2">Thêm vào giỏ</div>
+                  </div>
+                </div>
+                </div>
 				`)
 		})
 	})

@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Sản phẩm (New)</title>
+  <link rel="shorcut icon" type="image/png" href="images/favicon.png">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Dancing+Script|Roboto:400,500&display=swap&subset=vietnamese" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Responsive CSS -->
+  <link rel="stylesheet" href="css/responsive.css">
+  <!-- Header -->
+  <link rel="stylesheet" href="css/header.css">
+  <!-- Footer CSS -->
+  <link rel="stylesheet" href="css/footer.css">
+  <!-- Menu CSS -->
+  <link rel="stylesheet" href="css/menu.css">
+  <!-- Product CSS -->
+  <link rel="stylesheet" href="css/product.css">
+  
+</head>
+<body>
+
+ <!-- Header -->
+ <div id="menu"></div>
+
+ <!-- Main -->
+ <main>
+  <div class="container mx-auto">
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item" title="Trang chủ"><a href="index.html"><i class="fas fa-home text-success"></i>  Trang chủ</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Sản phẩm</li>
+      </ol>
+    </nav>
+
+    <div class="row">
+
+      <div class="col-md-3 col-12">
+        <div class="filter-box">
+          <ul class="filter-list">
+            <p>Lọc theo danh mục</p>
+            <li data-filter="*" class="active"><div class="list-style"></div>Tất cả</li>
+            <li data-filter=".glass-bottle"><div class="list-style"></div>Chai thủy tinh</li>
+            <li data-filter=".glass-jar"><div class="list-style"></div>Hũ thủy tinh</li>
+            <li data-filter=".glass-cup"><div class="list-style"></div>Cốc thủy tinh</li>
+            <li data-filter=".cosmetic-bottle"><div class="list-style"></div>Lọ đựng tinh dầu, mỹ phẩm</li>
+          <!-- </ul> -->
+
+          <!-- <ul class="filter-list"> -->
+            <p>Lọc theo nắp</p>
+            <li data-filter="*"><div class="list-style"></div>Tất cả</li>
+            <li data-filter=".glass-lid"><div class="list-style"></div>Nắp thủy tinh</li>
+            <li data-filter=".tin-lid"><div class="list-style"></div>Nắp thiếc</li>
+            <li data-filter=".aluminum-lid"><div class="list-style"></div>Nắp nhôm</li>
+            <li data-filter=".plastic-lid"><div class="list-style"></div>Nắp nhựa</li>
+          </ul>
+        </div>
+
+        <div class="promotional-products">
+          <p>Sản phẩm khuyến mãi</p>
+          <div class="promotional-products__content1 row"></div>
+        </div>
+
+      </div>
+
+      <div class="col-md-9 col-12">
+        <p class="page-heading">Sản phẩm</p>
+
+        <div class="sort-box">
+          <!-- <select name="product-type" id="product-type" class="filter">
+            <option value="*">Tất cả</option>
+            <option value="glass-bottle">Chai thủy tinh</option>
+            <option value="glass-jar">Hũ thủy tinh</option>
+            <option value="glass-cup">Cốc thủy tinh</option>
+            <option value="cosmetic-bottle">Lọ đựng tinh dầu, mỹ phẩm</option>
+          </select>
+
+          <select name="lid-type" id="lid-type" class="filter">
+            <option value="*">Tất cả</option>
+            <option value="glass-lid">Nắp thủy tinh</option>
+            <option value="tin-lid">Nắp thiếc</option>
+            <option value="aluminum-lid">Nắp nhôm</option>
+            <option value="plastic-lid">Nắp nhựa</option>
+          </select> -->
+          <span>Sắp xếp theo: </span>
+          <select class="sort">
+            <option>Mặc định</option>
+            <option value="name">Tên A-Z</option>
+            <option value="price">Giá (thấp-cao)</option>
+          </select>
+
+        </div>
+
+        <div class="row products"></div>
+
+        <!-- pagination -->
+        <nav aria-label="Page navigation example">
+          <ul class="pagination justify-content-center">
+            <li class="page-item disabled">
+              <a class="page-link" href="#" tabindex="-1">Trang trước</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Trang tiếp</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- pagination -->
+
+      </div>
+    </div>
+    <!-- row -->
+
+
+  </div>
+  <!-- container -->
+
+</main>
+
+<!-- Back to top -->
+<div class="back-to-top" href="#" title="Quay lại đầu trang">
+  <i class="fas fa-chevron-circle-up fa-2x"></i>
+</div>
+
+
+<!-- Footer -->
+<div id="footer"></div>
+
+
+<!-- Load Facebook SDK for JavaScript -->
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      xfbml            : true,
+      version          : 'v4.0'
+    });
+  };
+  (function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your customer chat code -->
+  <div class="fb-customerchat"
+  attribution=setup_tool
+  page_id="2071419156449295"
+  logged_in_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi."
+  logged_out_greeting="Xin chào,  hãy gửi tin nhắn cho chúng tôi.">
+</div>
+
+
+<!-- jQuery -->
+<script src="js/jquery-3.4.1.js"></script>
+<!-- Popper.js -->
+<script src="js/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Isotope JS-->
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+<!-- Product JS -->
+<script src="js/product.js"></script>
+
+
+
+</body>
+</html>
+
+
+
+

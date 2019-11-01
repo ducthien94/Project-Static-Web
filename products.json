@@ -199,8 +199,23 @@
 				"category": "cosmetic-bottle",
 				"material": "Chai nhựa",
 				"desc": "Sản phẩm chuyên đựng và bảo quản các loại tinh dầu"
+			},
+
+			{
+				"id": "16",
+				"name": "Cốc quai hình bí",
+				"price": "25.000",
+				"img": "images/coc-thuy-tinh/coc-quai-hinh-bi.png",
+				"img2": "images/anh-chi-tiet-sp/chai-xit-phun-suong.png",
+				"class": "glass-cup glass aluminum-lid",
+				"category": "glass-cup",
+				"material": "Cốc thủy tinh - Nắp nhôm",
+				"desc": "Sản phẩm thích hợp để đựng hầu hết các loại thức uống như trà sữa, sinh tố, cafe, nước ép, trà đào..."
 			}
+
 		]
 	}
 ]
+
+
 

@@ -1,0 +1,237 @@
+body, .breadcrumb {
+	background-color: #f2f2f2;
+}
+
+.breadcrumb {
+	padding-left: 0;
+}
+
+.breadcrumb-item a {
+	color: #6c757d;
+}
+
+.breadcrumb-item a:hover {
+	text-decoration: none;
+	color: #00ab39;
+}
+
+/* ======= Danh mục phụ (Lọc, Sp khuyến mãi) ======= */
+.filter-list {
+	list-style: none;
+	background-color: #fff;
+	padding-left: 0;
+	margin-bottom: 30px;
+}
+
+.filter-list p {
+	text-align: center;
+	padding: 10px 0;
+	background-color:  #8cb3d9;
+	color: #fff;
+	text-transform: uppercase;
+	margin-bottom: 0;
+}
+
+.filter-list li {
+	padding: 10px 5px 10px 25px;
+	border-bottom: 1px solid #c3c3c3;
+	position: relative;
+	cursor: pointer;
+}
+
+.filter-list li:last-child {
+	border-bottom: none;
+}
+
+.list-style {
+	width: 5px;
+	height: 5px;
+	background-color: #00ab39;
+	position: absolute;
+	top: 20px;
+	left: 10px;
+	transition: 0.6s ease;
+}
+
+.filter-list li:hover {
+	color: #00ab39;
+	font-weight: 500;
+}
+
+.filter-list li:hover .list-style {
+	height: 25px;
+	top: 10px;
+}
+
+/* Sản phẩm khuyến mãi */
+.promotional-products > p {
+	text-transform: uppercase;
+	padding: 10px 0;
+	margin-bottom: 0;
+	background-color: tomato;
+	text-align: center;
+	color: #fff;
+}
+.promotional-products .product-name {
+	font-size: 14px;
+}
+
+.promotional-products .new-price {
+	font-weight: 500;
+	color: #00ab39;
+	display: inline-block;
+	float: left;
+}
+
+.promotional-products .old-price {
+	font-size: 12px;
+	text-decoration: line-through;
+	color: #c4c4c4;
+	display: inline-block;
+}
+
+.promotional-products .text {
+	margin-bottom: 4px;
+	text-align: left;
+}
+
+.promotional-products__content1 {
+	padding: 0 15px;
+}
+
+.promotional-products__content1 .card {
+	padding: 0;
+}
+
+
+/* ======= Danh sách sản phẩm ======= */
+.page-heading {
+	text-align: center;
+	font-size: 30px;
+	font-family: 'Dancing Script';
+}
+
+.sort-box {
+	display: inline-block;
+	margin-bottom: 15px;
+}
+
+
+/* Card san pham */
+.wrap-card {
+	position: relative;
+	margin-bottom: 20px;
+}
+
+.wrap-card:hover .card {
+	opacity: 0.2;
+	box-shadow: 5px 5px 10px gray;
+}
+
+.wrap-card:hover .overlay {
+	opacity: 1;
+}
+
+.wrap-card-0,
+.wrap-card-4,
+.wrap-card-8 {
+	padding: 0 10px 0 15px;
+}
+
+.wrap-card-1, .wrap-card-2,
+.wrap-card-5, .wrap-card-6,
+.wrap-card-9, .wrap-card-10 {
+	padding: 0 12.5px;
+}
+
+.wrap-card-3,
+.wrap-card-7,
+.wrap-card-11 {
+	padding: 0 15px 0 10px;
+}
+
+
+.card {
+	text-align: center;
+	border: none;
+}
+
+.card-body {
+	padding: 10px 10px 20px;
+}
+
+.star {
+	color: #e6e600;
+}
+
+.card-title {
+	font-weight: 500;
+}
+
+.card-text {
+	font-size: 18px;
+	font-weight: 600;
+	color: #00ab39;
+}
+
+.overlay {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 1s ease;
+}
+
+.btn-detail, .btn-addToCart {
+	width: 150px;
+	padding: 5px 10px;
+	text-align: center;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	cursor: pointer;
+	color: #fff;
+	border-radius: 10px;
+}
+
+.btn-detail {
+	background-color: #00ab39;
+}
+
+.btn-detail:hover {
+	background-color: #004d1a;
+}
+
+.btn-addToCart {
+	background-color: tomato;
+	border: 1px solid tomato;
+}
+
+.btn-addToCart:hover {
+	background-color: #fff;
+	color: tomato;
+}
+
+/* Pagination */
+.pagination {
+	margin-top: 50px;
+}
+
+.pagination .page-item .page-link {
+	color: #000;
+}
+
+.pagination .page-item:nth-child(2) .page-link {
+	background-color: #00ab39;
+	color: #fff;
+}
+
+.active-li {
+	color: #00ab39;
+	font-weight: 500;
+}
+
+.active-list-style {
+	height: 25px;
+	top: 10px;
+}
