@@ -54,11 +54,11 @@ body {
 	box-shadow: 5px 5px 10px gray;
 }
 
-.wrap-card:hover .overlay {
+.wrap-card:hover .overlay1 {
 	opacity: 1;
 }
 
-.overlay {
+.overlay1 {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -67,7 +67,13 @@ body {
 	transition: 1s ease;
 }
 
-.btn-detail, .btn-addToCart {
+.overlay1 a:hover,
+.overlay2 a:hover {
+	text-decoration: none;
+}
+
+.btn-detail, .btn-addToCart,
+.btn-detail2, .btn-addToCart2 {
 	width: 150px;
 	padding: 10px;
 	color: #fff;
@@ -76,23 +82,23 @@ body {
 	border-radius: 10px;
 }
 
-.btn-detail {
+.btn-detail, .btn-detail2 {
 	border: 1px solid #00ab39;
 	background-color: #00ab39;
 	margin-bottom: 20px;
 }
 
-.btn-detail:hover {
+.btn-detail:hover, .btn-detail2:hover {
 	background-color: transparent;
 	color: #00ab39;
 }
 
-.btn-addToCart {
+.btn-addToCart, .btn-addToCart2 {
 	border: 1px solid tomato;
 	background-color: tomato;
 }
 
-.btn-addToCart:hover {
+.btn-addToCart:hover, .btn-addToCart2:hover {
 	background-color: transparent;
 	color: tomato;
 }
@@ -174,6 +180,17 @@ body {
 	margin-bottom: 40px;
 	background-color: #f2f2f2;
 	transition: all 0.4s;
+	text-align: center;
+}
+
+.hot-products__content .card-title {
+	font-weight: 500;
+}
+
+.hot-products__content .card-text {
+	font-weight: 500;
+	color: #00ab39;
+	font-size: 18px;
 }
 
 .hot-products__img {
@@ -233,6 +250,7 @@ body {
 }
 
 
+
 /* Ảnh trang trí (Section 4) */
 .section-4 {
 	margin-top: 80px;
@@ -283,6 +301,7 @@ body {
 	opacity: 1;
 }
 
+
 /* Code mới */
 .wrap-card2 {
 	margin-bottom: 30px;
@@ -295,13 +314,12 @@ body {
 .overlay2 {
 	position: absolute;
 	top: 50%;
-	left: 53%;
+	left: 50%;
 	transform: translate(-50%, -50%);
 	opacity: 0;
-	transition: 1s;
 }
 
-.btn-detail2,
+/*.btn-detail2,
 .btn-addToCart2 {
 	width: 150px;
 	padding: 10px;
@@ -331,7 +349,7 @@ body {
 .btn-addToCart2:hover {
 	background-color: transparent;
 	color: tomato;
-}
+}*/
 
 .promotional-products__title,
 .promotional-products__new-price,
@@ -384,10 +402,17 @@ body {
 	padding: 15px;
 }
 
-.news__items .card-body a:hover,
-.news__items .title-link:hover h6 {
+.news__items .card-body a {
+	color: #00ab39;
+}
+
+.news__items .card-body a:hover {
+	color: tomato;
 	text-decoration: none;
-	color: orange;
+}
+
+.news__items .title-link:hover h6 {
+	color: #00ab39;
 }
 
 .news__items .card-text {
@@ -412,7 +437,7 @@ body {
 .slick-dots li.slick-active button
 {
     opacity: 1;
-    background-color: orange;
+    background-color: tomato;
 }
 
 .slick-dots li button:before {
@@ -460,9 +485,31 @@ body {
 	font-size: 14px;
 }
 
+.news__items-2 .title-link {
+	color: #000;
+}
+
+.news__items-2 .title-link:hover {
+	color: #00ab39;
+	text-decoration: none;
+}
+
+.news__items-2 .icon-share,
+.news__items-2 .read-more {
+	color: #00ab39;
+}
+
+.news__items-2 .icon-share:hover,
+.news__items-2 .read-more:hover {
+	color: tomato;
+	text-decoration: none;
+}
+
+.news__items-2 .read-more
+
 /* Back to top */
 .back-to-top {
-	color: orange;
+	color: tomato;
 	position: fixed;
 	right: 40px;
 	bottom: 90px;

@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
 		for (let i = 0; i < products.length; i++) {
 			$(".products").append(`
-				<div class="col-lg-3 col-md-4 col-sm-4 col-6 wrap-card wrap-card-${i} ${products[i].class}">
+				<div class="col-lg-3 col-md-4 col-sm-4 col-6 wrap-card wrap-card-${i} ${products[i].class}" data-sort-default="${i}" data-sort-price="${products[i].price}" data-sort-name="${products[i].name}">
 				<div class="card">
 				<img src="${products[i].img}" class="card-img-top" alt="${products[i].name}" title="${products[i].name}">
 				<div class="card-body">
@@ -20,7 +20,7 @@ jQuery(document).ready(function($) {
 				</div>
 				</div>
 				<div class="overlay">
-				<div class="btn-detail">Xem chi tiết</div>
+				<a href="product-details.html#${products[i].id}" target="_blank"><div class="btn-detail">Xem chi tiết</div></a>
 				<div class="btn-addToCart">Thêm vào giỏ</div>
 				</div>
 				</div>  
@@ -46,9 +46,22 @@ jQuery(document).ready(function($) {
 				</div>
 				</div>
 				</div>
+				<div class="overlay2">
+				<a href="product-details.html#${element.id}" target="_blank"><div class="btn-detail">Xem chi tiết</div></a>
+				</div>
 				</div>
 				`)
 		})
+
+
+		$(".sort-box select.sort").change(function() {
+			let sortVal = $(this).val();
+			tinysort('.wrap-card', {
+				order: 'asc',
+				data: 'sort-' + sortVal
+			});
+		});
+
 
 		//Lọc sản phẩm
 		$('.filter-list li').click(function(){

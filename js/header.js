@@ -66,9 +66,9 @@ jQuery(document).ready(function($) {
 
 
   //Gán sự kiện click vào icon thêm vào giỏ hàng của sp nào thì thêm sản phẩm đó vào giỏ hàng mục SẢN PHẨM NỔI BẬT. 
-  $(".add-to-cart").click(function() {
-    let productTitle = $(this).parent().parent().parent().children('p').text();
-    let productPrice = $(this).parent().parent().children("div:first").text();
+  $(".btn-addToCart").click(function() {
+    let productTitle = $(this).parent().parent().children('.card').children('.card-body').children('.card-title').text();
+    let productPrice = $(this).parent().parent().children('.card').children('.card-body').children('.card-text').text();
     addItemToCart(productTitle, productPrice);
     updateCartTotal();
   });
@@ -141,9 +141,10 @@ jQuery(document).ready(function($) {
   };
 
   // Thêm vào giỏ hàng mục Sản phẩm khuyến mãi
-  $(".add-to-cart1").click(function() {
-    let productTitle1 = $(this).parent().parent().children('h6').text();
-    let productPrice1 = $(this).parent().parent().children("p:first").text();
+  $(".btn-addToCart2").click(function() {
+    let productTitle1 = $(this).parent().parent().children('div').children('div:last-child').children('.card-body').children('h6').text();
+    let productPrice1 = $(this).parent().parent().children('div').children('div:last-child').children('.card-body').children('p:first').text();
+    console.log(productTitle1,productPrice1);
     addItemToCart(productTitle1, productPrice1);
     updateCartTotal();
   });

@@ -32,15 +32,12 @@ body, .breadcrumb {
 	margin-bottom: 0;
 }
 
+
 .filter-list li {
 	padding: 10px 5px 10px 25px;
 	border-bottom: 1px solid #c3c3c3;
 	position: relative;
 	cursor: pointer;
-}
-
-.filter-list li:last-child {
-	border-bottom: none;
 }
 
 .list-style {
@@ -101,7 +98,34 @@ body, .breadcrumb {
 
 .promotional-products__content1 .card {
 	padding: 0;
+	position: relative;
 }
+
+.promotional-products__content1 .card .no-gutters {
+	transition: 0.8s;
+}
+
+.promotional-products__content1 .card:hover .no-gutters {
+	opacity: 0.2;
+}
+
+.promotional-products__content1 .card:hover .overlay2 {
+	opacity: 1;
+}
+
+.promotional-products__content1 .card .overlay2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.overlay2 a:hover {
+	text-decoration: none;
+}
+
 
 
 /* ======= Danh sách sản phẩm ======= */
@@ -124,12 +148,16 @@ body, .breadcrumb {
 }
 
 .wrap-card:hover .card {
-	opacity: 0.2;
+	opacity: 0.1;
 	box-shadow: 5px 5px 10px gray;
 }
 
 .wrap-card:hover .overlay {
 	opacity: 1;
+}
+
+.overlay a:hover {
+	text-decoration: none;
 }
 
 .wrap-card-0,
@@ -196,10 +224,12 @@ body, .breadcrumb {
 
 .btn-detail {
 	background-color: #00ab39;
+	border: 1px solid #00ab39;
 }
 
 .btn-detail:hover {
-	background-color: #004d1a;
+	background-color: transparent;
+	color: #00ab39;
 }
 
 .btn-addToCart {
@@ -208,7 +238,7 @@ body, .breadcrumb {
 }
 
 .btn-addToCart:hover {
-	background-color: #fff;
+	background-color: transparent;
 	color: tomato;
 }
 

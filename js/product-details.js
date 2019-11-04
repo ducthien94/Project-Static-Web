@@ -33,7 +33,6 @@ jQuery(document).ready(function($) {
 			<p class="product-details__text"><span class="product-details__desc">Giá sản phẩm: </span><span class="product-details__price">${product[id-1].price} <sup>đ</sup></span></p>
 			<div>
 			<span class="product-details__desc">Số lượng: </span><input class="product-details__amount" name="amount" type="number" value="1"> <br>
-			<div class="product-details__buyNow text-center">Mua ngay</div> 
 			<div class="product-details__addToCart add-to-cart">Thêm vào giỏ hàng</div>
 			</div>
 			</div>

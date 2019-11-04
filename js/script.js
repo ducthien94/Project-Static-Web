@@ -13,7 +13,7 @@ $(function() {
 		let hotProducts = data[0].hotProducts;	
 		hotProducts.forEach( function(element, index) {
 			$("#hot-products").append(`
-				<div class="col-md-4 col-sm-4 col-6 wrap-card wrap-card-${index}">
+				<div class="col-md-4 col-sm-6 col-12 wrap-card wrap-card-${index}">
 				<div class="card">
 				<img src="images/sp-noi-bat/${element.img}" class="card-img-top" alt="${element.name}" title="${element.name}">
 				<div class="card-body">
@@ -29,8 +29,8 @@ $(function() {
 				<p class="card-text">${element.price} <sup>đ</sup></p>
 				</div>
 				</div>
-				<div class="overlay">
-				<div class="btn-detail">Xem chi tiết</div>
+				<div class="overlay1">
+				<a href="product-details.html#${element.id}"><div class="btn-detail">Xem chi tiết</div></a>
 				<div class="btn-addToCart">Thêm vào giỏ</div>
 				</div>
 				</div>  
@@ -41,7 +41,7 @@ $(function() {
 		let promotionalProducts = data[1].promotionalProducts;
 		promotionalProducts.forEach(function(element,index) {
 			$(".promotional-products__content").append(`
-				<div class="wrap-card2 wrap-card2-${index} col-md-6">
+				<div class="wrap-card2 wrap-card2-${index} col-sm-6 col-12">
 				<div data-id="${element.id}" class="card">
                   <div class="row no-gutters">
                     <div class="col-md-5 col-12 promotional-products__img">
@@ -56,7 +56,7 @@ $(function() {
                     </div>
                   </div>
                   <div class="overlay2">
-                    <div class="btn-detail2">Xem chi tiết</div>
+                    <a href="product-details.html#${element.id}"><div class="btn-detail2">Xem chi tiết</div></a>
                     <div class="btn-addToCart2">Thêm vào giỏ</div>
                   </div>
                 </div>
