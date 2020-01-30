@@ -43,28 +43,35 @@ $(function() {
 			$(".promotional-products__content").append(`
 				<div class="wrap-card2 wrap-card2-${index} col-sm-6 col-12">
 				<div data-id="${element.id}" class="card">
-                  <div class="row no-gutters">
-                    <div class="col-md-5 col-12 promotional-products__img">
-                      <a href="product-details.html#${element.id}" target="_blank" class="link-to-product"><img src="images/sp-khuyen-mai/${element.img}" class="card-img" alt="${element.name}" title="${element.name}"></a>
-                    </div>
-                    <div class="col-md-7 col-12">
-                      <div class="card-body">
-                        <h6 class="card-title product-title promotional-products__title">${element.name}</h6>
-                        <p class="card-text promotional-products__new-price">${element.newPrice} <sup>đ</sup></p>
-                        <p class="card-text promotional-products__old-price">${element.oldPrice} <sup>đ</sup></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="overlay2">
-                    <a href="product-details.html#${element.id}"><div class="btn-detail2">Xem chi tiết</div></a>
-                    <div class="btn-addToCart2">Thêm vào giỏ</div>
-                  </div>
-                </div>
-                </div>
+				<div class="row no-gutters">
+				<div class="col-md-5 col-12 promotional-products__img">
+				<a href="product-details.html#${element.id}" target="_blank" class="link-to-product"><img src="images/sp-khuyen-mai/${element.img}" class="card-img" alt="${element.name}" title="${element.name}"></a>
+				</div>
+				<div class="col-md-7 col-12">
+				<div class="card-body">
+				<h6 class="card-title product-title promotional-products__title">${element.name}</h6>
+				<p class="card-text promotional-products__new-price">${element.newPrice} <sup>đ</sup></p>
+				<p class="card-text promotional-products__old-price">${element.oldPrice} <sup>đ</sup></p>
+				</div>
+				</div>
+				</div>
+				<div class="overlay2">
+				<a href="product-details.html#${element.id}"><div class="btn-detail2">Xem chi tiết</div></a>
+				<div class="btn-addToCart2">Thêm vào giỏ</div>
+				</div>
+				</div>
+				</div>
 				`)
 		})
+
+		// //Click nút thêm vào giỏ thì thông báo thêm vào giỏ hàng hiện ra
+		// $(".btn-addToCart").click(function() {
+		// 	$(".alert").fadeIn(500).fadeOut(2500);
+		// })
+
 	})
 	
+
 
 	// Slide Tin tức
 	$('.news__items').slick({

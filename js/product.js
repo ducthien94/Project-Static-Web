@@ -10,7 +10,7 @@ jQuery(document).ready(function($) {
 
 		for (let i = 0; i < products.length; i++) {
 			$(".products").append(`
-				<div class="col-lg-3 col-md-4 col-sm-4 col-6 wrap-card wrap-card-${i} ${products[i].class}" data-sort-default="${i}" data-sort-price="${products[i].price}" data-sort-name="${products[i].name}">
+				<div class="col-lg-3 col-md-4 col-sm-6 col-6 wrap-card wrap-card-${i} ${products[i].class}" data-sort-default="${i}" data-sort-price="${products[i].price}" data-sort-name="${products[i].name}">
 				<div class="card">
 				<img src="${products[i].img}" class="card-img-top" alt="${products[i].name}" title="${products[i].name}">
 				<div class="card-body">
@@ -33,12 +33,12 @@ jQuery(document).ready(function($) {
 
 		promotionalProducts.forEach(function(element, index) {
 			$(".promotional-products__content1").append(`
-				<div class="card mb-3 col-md-12 col-6">
+				<div class="card mb-3 col-md-12 col-sm-6 col-12">
 				<div class="row no-gutters">
-				<div class="col-5 col-md-4">
+				<div class="col-4 col-sm-4">
 				<img src="images/anh-chi-tiet-sp/${element.img}" class="card-img" alt="${element.name}" title="${element.name}">
 				</div>
-				<div class="col-7 col-md-8">
+				<div class="col-8 col-sm-8">
 				<div class="card-body">
 				<p class="text product-name">${element.name}</p>
 				<p class="text new-price">${element.newPrice} <sup>đ</sup></p>
@@ -54,6 +54,20 @@ jQuery(document).ready(function($) {
 		})
 
 
+		//Ẩn thông báo Thêm vào giỏ hàng thành công
+		$(".alert").hide();
+
+		let count = 0;
+		//Click nút Thêm vào giỏ thì hiện thông báo Thêm vào giỏ hàng thành công
+		$(".btn-addToCart").click(function() {
+			$(".alert").fadeIn(500).fadeOut(3000);
+			count++;
+			if (count > 1) {
+				$(".alert").hide();
+			}
+		})
+
+		//Sắp xếp sản phẩm
 		$(".sort-box select.sort").change(function() {
 			let sortVal = $(this).val();
 			tinysort('.wrap-card', {
@@ -88,5 +102,16 @@ jQuery(document).ready(function($) {
 
 
 	}); //getJSON
+
+	$(".open-filter").click(function() {
+		$(".filter-box").show('1000');
+		$(".close-filter").show();
+	})
+
+	$(".close-filter").click(function() {
+		$(".filter-box").hide('1000');
+		$(this).hide();
+	})
+
 
 });

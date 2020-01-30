@@ -85,7 +85,6 @@ jQuery(document).ready(function($) {
 
 
     $(".cart-items").append(` 
-
       <div class="cart-row row">
       <div class="cart-item col-4">
       <span class="cart-item__title">${productTitle}</span>
@@ -99,7 +98,6 @@ jQuery(document).ready(function($) {
       </div>
       <div class="col-2"> <button class="cart-remove btn-danger">Xóa</button></div>
       </div>
-
       `)
 
 

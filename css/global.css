@@ -123,45 +123,14 @@ body {
 	padding-top: 15px;
 }
 
-
-/* Về chúng tôi */
-.about {
-	max-width: 920px;
-	margin-top: 60px;
+/* Thông báo thêm vào giỏ hàng thành công */
+.alert {
+	display: none;
+	position: fixed;
+	z-index: 999;
+	top: 50%;
+	left: 39.5%;
 }
-
-.about__desc {
-	font-size: 16px;
-	text-align: center;
-	padding: 20px 40px;
-}
-
-.about__btn {
-	width: 175px;
-	height: 50px;
-	background-color: #fff;
-	color: #00ab39;
-	border: 2px solid #00ab39;
-	border-radius: 10px;
-	text-align: center;
-	line-height: 50px;
-	cursor: pointer;
-}
-
-.about__btn a {
-	color: #00ab39;
-}
-
-.about__btn:hover {
-	background-color: #00ab39;
-	color: #fff;
-}
-
-.about__btn:hover a {
-	text-decoration: none;
-	color: #fff;
-}
-
 
 /* Sản phẩm nổi bật */
 .hot-products {

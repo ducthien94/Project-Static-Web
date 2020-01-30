@@ -16,7 +16,7 @@
 			{"id": "01", "name": "Hũ nắp bạc", "oldPrice": "22.000", "newPrice": "17.000", "img": "hu-nap-bac.png"},
 			{"id": "11", "name": "Chai bóng đèn", "oldPrice": "31.000", "newPrice": "25.000", "img": "chai-bong-den.png"},
 			{"id": "14", "name": "Hũ nhôm", "oldPrice": "20.000", "newPrice": "12.000", "img": "hu-nhom.png"},
-			{"id": "12", "name": "Lọ tinh dầu treo xe", "oldPrice": "27.000", "newPrice": "20.000", "img": "lo-tinh-dau-treo-xe.png"}
+			{"id": "12", "name": "Lọ t.dầu treo xe", "oldPrice": "27.000", "newPrice": "20.000", "img": "lo-tinh-dau-treo-xe.png"}
 		]
 	},
 	{
